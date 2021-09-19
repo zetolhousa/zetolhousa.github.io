@@ -7,7 +7,7 @@ date: 2021-09-19T14:36:20+05:30
 
 Most of the big tech companies have in-house tooling which is a beast in itself to learn (depending on the company and how much internal tools they own). Having to learn them while also trying to learn a new programming language or technology can greatly slow you from getting up to speed.
 
-Most of the big tech companies have in-house tooling which is a beast in itself to learn (depending on the company and how much internal tools they own). Having to learn them while also trying to learn a new programming language or technology can greatly slow you from getting up to speed.
+Below I share some things which I feel having a firm grasp of will boost your productivity and ramp up time.
 
 ### SQL
 I bet this is the most widely used language in any software engineering job involving some amount of data. Without any explanation, reason or rhyme just trust me and learn this. You’ll thank me.
