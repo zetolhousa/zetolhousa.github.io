@@ -1,4 +1,4 @@
-baseURL = 'http://zetolhousa.github.io/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Thejazeto Lhousa'
 theme = 'archie'
