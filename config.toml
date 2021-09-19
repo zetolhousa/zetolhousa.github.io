@@ -2,3 +2,36 @@ baseURL = '/'
 languageCode = 'en-us'
 title = 'Thejazeto Lhousa'
 theme = 'archie'
+copyright = '©thejazeto'
+
+[params]
+	mode="auto" # color-mode → light,dark or auto
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	subtitle = "Random stuff and opinions"
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/zetolhousa"
+
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/thejazeto/"
+
+# Main menu Items
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
