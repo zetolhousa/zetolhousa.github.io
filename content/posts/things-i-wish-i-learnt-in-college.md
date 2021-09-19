@@ -28,7 +28,7 @@ This is a powerhouse. I’m lucky I started learning it religiously in college. 
 
 Depending on your job profile, the amount of time you spend on it will very but it is certain that you will NOT be able to avoid it. This is because at one point you’ll have to ssh into a remote machine. Where you’ll not find your cozy little GUI based sublime text editor or notepad++. Forget about full blown IDEs.
 
-All text editing will have to be done on some kind of terminal based text editor. Just make sure that when the day comes you’re not stuck trying to figure out how to exit vim.
+All text editing will have to be done on some kind of terminal based text editor. Just make sure that when the day comes you’re not stuck trying to figure out [how to exit vim](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/).
 
 ### Java
 This is probably something specific for my case because I avoided Java like plague. I hated it for some reason and made it my life’s mission never to do anything that was remotely even related to Java. This was the naive me in college.
