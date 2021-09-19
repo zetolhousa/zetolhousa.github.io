@@ -1,6 +1,7 @@
 ---
 title: "Things I wish I learnt before getting a job"
 date: 2021-09-19T14:36:20+05:30
+tldr: learn SQL, git, vim, java
 ---
 
 *Disclaimer: there is only so much you can prepare in advance. You’ll mostly learn everything on the job itself but I think there are some learnings which can take off the load. Instead of trying to play catch up while on the job.*
@@ -35,6 +36,6 @@ This is probably something specific for my case because I avoided Java like plag
 
 But guess what, now I use it every single day. Biggest regret.
 
-It’s not going away anytime soon and it’s used so widely in every major company. I always thought C/C++ with a higher level language like Python would suffice. I wasn’t really wrong there, because for a fresher having a solid grasp of any language is enough to prove one can code.
+It’s not going away anytime soon and it’s used so widely in every major company. I always thought C/C++ paired with a higher level language like Python would suffice. I wasn’t really wrong there, because for a fresher having a solid grasp of any language able to code up solutions to data structure and algo problems is enough to prove ones potential (fortunately or unfortunately).
 
-The reason I regret not learning Java is because the time that could have been spent actually producing code I had to invest in learning from scratch too.
+The reason I regret not learning Java is because the time that could have been spent actually producing code, I had to invest learning a language from scratch.
