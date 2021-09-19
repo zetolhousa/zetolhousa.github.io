@@ -1,0 +1,4 @@
+baseURL = 'http://zetolhousa.github.io/'
+languageCode = 'en-us'
+title = 'Thejazeto Lhousa'
+theme = 'archie'
