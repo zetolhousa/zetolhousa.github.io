@@ -1,5 +1,5 @@
 ---
-title: "Things I wish I learned before getting a job"
+title: "Things I wish I learnt before getting a job"
 date: 2021-09-19T14:36:20+05:30
 ---
 
