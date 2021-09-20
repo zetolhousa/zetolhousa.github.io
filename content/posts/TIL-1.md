@@ -40,3 +40,5 @@ Keep your mac from falling asleep
 ```bash
 caffeinate -d
 ```
+
+FYI it could stay awake without even blinking for centuries. At least in theory.

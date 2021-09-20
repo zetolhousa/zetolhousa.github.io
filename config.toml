@@ -21,6 +21,11 @@ name = "Twitter"
 icon = "twitter"
 url = "https://twitter.com/thejazeto/"
 
+[[params.social]]
+name = "LinkedIn"
+icon = "linkedin"
+url = "https://www.linkedin.com/in/thejazeto/"
+
 # Main menu Items
 
 [[menu.main]]
