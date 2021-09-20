@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Thejazeto Lhousa'
 theme = 'archie'
 copyright = '©thejazeto'
+paginate = 5
 googleAnalytics = 'UA-207977170-1'
 
 [params]
