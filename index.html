@@ -33,6 +33,16 @@
 <main class=list>
 <div class=site-description><p>Random stuff and opinions</p></div>
 <section class=list-item>
+<h1 class=title><a href=/posts/til-1/>TIL 1</a></h1>
+<time>Sep 20, 2021</time>
+<br><div class=description>
+FactoryBean An amazing way to instantiate your beans based on different situations or conditions.
+Example Use case: I want a specific implementation of an interface based on some launch date. I can define that in the factory.
+public class MessageFactoryBean implements FactoryBean&lt;MessageInterface> { private MessageInterface postcard; private MessageInterface letter; public MessageInterface getObject() { if (your condition here) { return letter; } return postcard; } // other methods omitted } Where MessageInterface is implemented by PostCard and FormalLetter.&mldr;
+</div>
+<a href=/posts/til-1/>Read more ⟶</a>
+</section>
+<section class=list-item>
 <h1 class=title><a href=/posts/things-i-wish-i-learnt-before-job/>Things I wish I learnt before getting a job</a></h1>
 <time>Sep 19, 2021</time>
 <br><div class=description>
