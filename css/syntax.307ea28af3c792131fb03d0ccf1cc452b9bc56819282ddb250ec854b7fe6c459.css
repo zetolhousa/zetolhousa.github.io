@@ -1,0 +1,5 @@
+.highlight pre code[class="language-java"]::before {
+  content: "java";
+  background: #f7df1e;
+  color: black;
+}
