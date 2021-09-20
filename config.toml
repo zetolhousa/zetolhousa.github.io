@@ -10,6 +10,7 @@ googleAnalytics = 'UA-207977170-1'
 	mode="auto" # color-mode → light,dark or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	subtitle = "Random stuff and opinions"
+    customcss = ["css/syntax.css"]
 
 [[params.social]]
 name = "GitHub"
