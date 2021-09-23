@@ -45,6 +45,7 @@ Bank apps The banks own apps to manage accounts. For the purposes of checking st
 <h1 class=title><a href=/posts/til-1/>TIL 1</a></h1>
 <time>Sep 20, 2021</time>
 <br><div class=description>
+Today I Learned a.k.a TIL
 FactoryBean An amazing way to instantiate your beans based on different situations or conditions.
 Example use case: I want a specific implementation of an interface based on some launch date. I can define that in the factory.
 public class MessageFactoryBean implements FactoryBean&lt;MessageInterface> { private MessageInterface postcard; private MessageInterface letter; public MessageInterface getObject() { if (your condition here) { return letter; } return postcard; } // other methods omitted } Where MessageInterface is implemented by PostCard and FormalLetter.&mldr;
