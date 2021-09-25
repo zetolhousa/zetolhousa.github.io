@@ -1,0 +1,122 @@
+<!doctype html><html><head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge"><title>My Dotfile Favorites - Thejazeto Lhousa</title><meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Dotfiles are used to customize your system. The “dotfiles” name is derived from the configuration files in Unix-like systems that start with a dot (e.g. .bash_profile and .gitconfig). In this post I will share some of my most used configurations for some common dotfiles.
+.zshrc greph () { fc -ln 0 | grep --color=auto $1 | awk '!seen[$0]++' | sed -e 's/^/>> /' } I love this one. Probably my favorite in this dotfile.">
+<meta property="og:image" content>
+<meta property="og:title" content="My Dotfile Favorites">
+<meta property="og:description" content="Dotfiles are used to customize your system. The “dotfiles” name is derived from the configuration files in Unix-like systems that start with a dot (e.g. .bash_profile and .gitconfig). In this post I will share some of my most used configurations for some common dotfiles.
+.zshrc greph () { fc -ln 0 | grep --color=auto $1 | awk '!seen[$0]++' | sed -e 's/^/>> /' } I love this one. Probably my favorite in this dotfile.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/posts/my-dotfile-favorites/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-09-25T15:58:55+05:30">
+<meta property="article:modified_time" content="2021-09-25T15:58:55+05:30">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="My Dotfile Favorites">
+<meta name=twitter:description content="Dotfiles are used to customize your system. The “dotfiles” name is derived from the configuration files in Unix-like systems that start with a dot (e.g. .bash_profile and .gitconfig). In this post I will share some of my most used configurations for some common dotfiles.
+.zshrc greph () { fc -ln 0 | grep --color=auto $1 | awk '!seen[$0]++' | sed -e 's/^/>> /' } I love this one. Probably my favorite in this dotfile.">
+<script src=/js/feather.min.js></script>
+<link href=/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css rel=stylesheet>
+<link rel=stylesheet type=text/css media=screen href=/css/main.2f9b5946627215dc1ae7fa5f82bfc9cfcab000329136befeea5733f21e77d68f.css>
+<link rel=stylesheet type=text/css href=/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css media="(prefers-color-scheme: dark)">
+<link rel=stylesheet type=text/css href=/css/syntax.307ea28af3c792131fb03d0ccf1cc452b9bc56819282ddb250ec854b7fe6c459.css>
+</head>
+<body>
+<div class=content><header>
+<div class=main>
+<a href=/>Thejazeto Lhousa</a>
+</div>
+<nav>
+<a href=/>Home</a>
+<a href=/posts>All posts</a>
+<a href=/about>About</a>
+</nav>
+</header>
+<main>
+<article>
+<div class=title>
+<h1 class=title>My Dotfile Favorites</h1>
+<div class=meta>Posted on Sep 25, 2021</div>
+</div>
+<section class=body>
+<p>Dotfiles are used to customize your system. The “dotfiles” name is derived from the configuration files in Unix-like systems that start with a dot (e.g. <code>.bash_profile</code> and <code>.gitconfig</code>). In this post I will share some of my most used configurations for some common dotfiles.</p>
+<h2 id=zshrc>.zshrc</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>greph <span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+    fc -ln <span style=color:#ae81ff>0</span> | grep --color<span style=color:#f92672>=</span>auto $1 | awk <span style=color:#e6db74>&#39;!seen[$0]++&#39;</span> | sed -e <span style=color:#e6db74>&#39;s/^/&gt;&gt; /&#39;</span>
+<span style=color:#f92672>}</span>
+</code></pre></div><p>I love this one. Probably my favorite in this dotfile. Usually I find myself having to type a very long CLI command to execute something. Then execute some other commands. If I have to repeat that same command, I&rsquo;ll have to press up arrow key to go back the entire command execution history and find the command or re-type it from stratch or copy it in a notepad and paste it back. With this I can simply <code>greph substring_of_command</code> and get every matching command that was recently executed.</p>
+<hr>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>grepr <span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+    grep -nri $1 *
+<span style=color:#f92672>}</span>
+</code></pre></div><p>This one helps me find a text pattern in current location and all its sub-directories. Pretty useful when you know a term but can&rsquo;t remember the location. I have a folder where I store a bunch of notes in markdown files. Doing a quick <code>grepr text_i_want</code> gives me the results.</p>
+<hr>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>u <span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+   set -A ud
+   ud<span style=color:#f92672>[</span>1+<span style=color:#e6db74>${</span>1-1<span style=color:#e6db74>}</span><span style=color:#f92672>]=</span>
+   cd <span style=color:#e6db74>${</span>(j:../:)ud<span style=color:#e6db74>}</span>
+<span style=color:#f92672>}</span>
+</code></pre></div><p>It&rsquo;s tedious having to <code>cd ..</code> all the way up a deeply nested folder. With this you can simply <code>u 10</code> to go 10 directories up.</p>
+<hr>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>alias gls<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;gls --color=auto --group-directories-first -X -1&#34;</span>
+alias cls<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;clear&#34;</span>
+alias cdu<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;cd ..&#34;</span>
+alias gitc<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;git commit -m&#39;</span>
+alias gits<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;git status&#39;</span>
+alias gitl<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;git log&#39;</span>
+alias gita<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;git add -A&#39;</span>
+alias gitd<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;git diff&#39;</span>
+alias gitb<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;git branch&#39;</span>
+alias gitp<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;git pull&#39;</span>
+alias gitch<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;git checkout&#39;</span>
+</code></pre></div><p>There are my goto aliases on a daily basis. <code>cls</code> is probably my most used, can&rsquo;t live without it. If on a remote host I still do <code>alias cls='clear'</code> and go about doing my work on that host 😂 that&rsquo;s how much I need it.</p>
+<p>Some other zsh configurations I have:</p>
+<ul>
+<li>powerlevel10K theme</li>
+<li>ohMyZsh</li>
+</ul>
+<h2 id=tmuxconf>.tmux.conf</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>unbind-key C-a
+set -g prefix <span style=color:#e6db74>`</span>
+bind-key <span style=color:#e6db74>`</span> send-prefix
+</code></pre></div><p>This update the <strong>prefix key</strong> to the tilde character. I find it so much more convenient and easy to reach.</p>
+<hr>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>set -g base-index <span style=color:#ae81ff>1</span>
+</code></pre></div><p>Sets the window indexing from 1. Makes more sense because on your keyboard 0 is at the right end which is supposed to represent the first window.</p>
+<hr>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>set -g history-limit <span style=color:#ae81ff>100000</span>
+</code></pre></div><p>Sometimes when you have a long file printed out the tmux window history is limited by some default lines and you lose ability to scroll beyond that.</p>
+<hr>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>set -g default-terminal <span style=color:#e6db74>&#34;xterm-256color&#34;</span>
+</code></pre></div><p>If not colored already, this colors the terminal similar to syntax highlighting for code but in this case highlights prompt, folderes, executables, etc. in its own colors.</p>
+<h2 id=vimrc>.vimrc</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>set nu              <span style=color:#75715e># line numbering</span>
+set relativenumber  <span style=color:#75715e># google it</span>
+set cursorline      <span style=color:#75715e># adds an underline to where cursor currently is</span>
+set wildmenu        <span style=color:#75715e># google it</span>
+set autoindent      <span style=color:#75715e># intelligently indent different files when editing</span>
+syntax on           <span style=color:#75715e># syntax highlighting</span>
+colorscheme elflord <span style=color:#75715e># highlighting color scheme</span>
+set tabstop<span style=color:#f92672>=</span><span style=color:#ae81ff>4</span>       <span style=color:#75715e># each tab will have 4 spaces instead of usual 8</span>
+set shiftwidth<span style=color:#f92672>=</span><span style=color:#ae81ff>4</span>    <span style=color:#75715e># google it</span>
+set softtabstop<span style=color:#f92672>=</span><span style=color:#ae81ff>4</span>   <span style=color:#75715e># google it</span>
+set expandtab       <span style=color:#75715e># makes space character for each tab</span>
+set nowrap          <span style=color:#75715e># vim editor will not wrap lines to go to next line</span>
+set sidescroll<span style=color:#f92672>=</span><span style=color:#ae81ff>2</span>    <span style=color:#75715e># speed of sidescroll</span>
+set hlsearch        <span style=color:#75715e># each search will highlight the pattern</span>
+set ic              <span style=color:#75715e># ignores case when searching</span>
+</code></pre></div>
+</section>
+<div class=post-tags>
+</div>
+</article>
+</main>
+<footer>
+<hr><a class=soc href=https://github.com/zetolhousa title=GitHub><i data-feather=github></i></a>|<a class=soc href=https://twitter.com/thejazeto/ title=Twitter><i data-feather=twitter></i></a>|<a class=soc href=https://www.linkedin.com/in/thejazeto/ title=LinkedIn><i data-feather=linkedin></i></a>|⚡️
+2021 ©thejazeto | <a href=https://github.com/athul/archie>Archie Theme</a> | Built with <a href=https://gohugo.io>Hugo</a>
+</footer>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-207977170-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<script>feather.replace()</script></div>
+</body>
+</html>
