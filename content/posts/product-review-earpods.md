@@ -6,6 +6,12 @@ tags: [product-reviews]
 
 I've owned the AirPod Pros for a little over a year and the Nothing ear(1) for about 2 weeks as of this writing. Below I share some personal experiences and opinions which may help in deciding if caught in a dillema between the two amazing products.
 
+Official product links:
+* [AirPods Pro](https://www.apple.com/in/shop/product/MWP22HN/A/airpods-pro)
+* [Nothing ear(1)](https://in.nothing.tech/products/ear-1)
+
+Let's get started...
+
 ### Active Noise Cancellation (ANC)
 This is a close one at least in my ears. They both keep out noise pretty well. For any normal human out there, you will not be able to pick any difference.
 
