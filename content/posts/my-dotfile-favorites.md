@@ -1,7 +1,6 @@
 ---
 title: "My Dotfile Favorites"
 date: 2021-09-25T15:58:55+05:30
-draft: true
 ---
 
 Dotfiles are used to customize your system. The “dotfiles” name is derived from the configuration files in Unix-like systems that start with a dot (e.g. `.bash_profile` and `.gitconfig`). In this post I will share some of my most used configurations for some common dotfiles.
