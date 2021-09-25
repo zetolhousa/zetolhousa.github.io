@@ -35,7 +35,9 @@ tags: [weekend-read]
 * [10x engineer myth](https://www.swarmia.com/blog/busting-the-10x-software-engineer-myth)
     * tl;dr such engineers ultimately slow company down and drags scalability.
 * [Genius checklist](https://supermemo.guru/wiki/Genius_checklist)
-    * tj;dr no secret sauce just a list of good habits to help memory
+    * tl;dr no secret sauce just a list of good habits to help memory
+* [On time, money and health](https://todaypurpose.com/posts/time-money-health/)
+    * tl;dr an eye opener for those in the rat race. Shows value of time in ones short life.
 
 ### Code snippets
 Snippet#1
