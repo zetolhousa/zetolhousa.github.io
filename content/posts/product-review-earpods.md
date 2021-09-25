@@ -65,4 +65,4 @@ Haven't gone out of my way to put it to test but no one has complained so far fo
 👎 AirPods feel like a pair of lead compared to ear(1). There's a feeling of high quality from the weight but lighter is always better when wearing them.
 
 ### Conclusion
-So there you have it. Those are some things which I would have liked to know while shoping around. To conclude, for the best bang of your buck the Nothing ear(1)s are amazing. But if you have extra money lying around under your bed then go with the AirPods 😛
+So there you have it. Those are some things which I would have liked to know while shoping around. To conclude, for the best bang of your buck the Nothing ear(1)s are amazing. But if you have extra money lying around under your bed then go with the AirPod Pros 😛
