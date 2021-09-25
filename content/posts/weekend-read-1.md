@@ -38,6 +38,12 @@ tags: [weekend-read]
     * tl;dr no secret sauce just a list of good habits to help memory
 * [On time, money and health](https://todaypurpose.com/posts/time-money-health/)
     * tl;dr an eye opener for those in the rat race. Shows value of time in ones short life.
+* [Software estimation 1](https://jacobian.org/2021/may/25/my-estimation-technique/)
+    * It's hard and not accurate but still do it
+    * Estimation gets better with time
+    * Size up tasks with apt. days required for each eg: {S:1, M:3, L:5, XL:10} 
+    * Unertainty multiplier: {low:1.1, med:1.5, high:2.0, extreme:5.0}
+* [Software estimation 2](https://tomrussell.co.uk/writing/2021/07/19/estimating-large-scale-software-projects.html)
 
 ### Code snippets
 Snippet#1
