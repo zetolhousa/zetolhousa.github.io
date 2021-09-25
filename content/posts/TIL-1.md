@@ -6,7 +6,7 @@ tags: [til]
 
 *Today I Learned a.k.a TIL*
 
-### FactoryBean
+## FactoryBean
 An amazing way to instantiate your beans based on different situations or conditions.
 
 Example use case: I want a specific implementation of an interface based on some launch date. I can define that in the factory.
@@ -33,7 +33,7 @@ References:
 * [What is factory bean](https://spring.io/blog/2011/08/09/what-s-a-factorybean)
 * [SO question where code snippet was taken](https://stackoverflow.com/questions/34679026/conditional-ref-in-spring-beans)
 
-### Caffeinate
+## Caffeinate
 Keep your mac from falling asleep
 
 1. Open terminal
