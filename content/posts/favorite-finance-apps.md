@@ -1,7 +1,7 @@
 ---
 title: "Favorite Finance Apps"
 date: 2021-09-21T05:27:54+05:30
-tags: [apps]
+tags: [apps, money]
 ---
 
 ### Bank apps
