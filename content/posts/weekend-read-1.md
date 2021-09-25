@@ -34,6 +34,8 @@ tags: [weekend-read]
 * [Reverse/foward proxies explained](https://www.haskellforall.com/2021/09/forward-and-reverse-proxies-explained.html)
 * [10x engineer myth](https://www.swarmia.com/blog/busting-the-10x-software-engineer-myth)
     * tl;dr such engineers ultimately slow company down and drags scalability.
+* [Genius checklist](https://supermemo.guru/wiki/Genius_checklist)
+    * tj;dr no secret sauce just a list of good habits to help memory
 
 ### Code snippets
 Snippet#1
