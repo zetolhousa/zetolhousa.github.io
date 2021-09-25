@@ -27,9 +27,12 @@ date: 2021-09-25T01:48:04+05:30
     * `verifyZeroInteractions(x)`
     * `verifyNoMoreInteractions(x)`
     * `inOrder.verify(x)`
-* [Git rebase visually](https://dev.to/joemsak/git-rebase-explained-and-eventually-illustrated-5hlb)
+* [Git rebase explained visually](https://dev.to/joemsak/git-rebase-explained-and-eventually-illustrated-5hlb)
 * [Deep stubs in mockito](https://www.javadoc.io/doc/org.mockito/mockito-core/2.2.9/org/mockito/Mockito.html#RETURNS_DEEP_STUBS)
     * `Mockito.RETURNS_DEFAULTS`
+* [Reverse/foward proxies explained](https://www.haskellforall.com/2021/09/forward-and-reverse-proxies-explained.html)
+* [10x engineer myth](https://www.swarmia.com/blog/busting-the-10x-software-engineer-myth)
+    * tl;dr such engineers ultimately slow company down and drags scalability.
 
 ### Code snippets
 Snippet#1
