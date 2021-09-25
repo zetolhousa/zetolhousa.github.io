@@ -1,6 +1,7 @@
 ---
 title: "Weekend Read 1"
 date: 2021-09-25T01:48:04+05:30
+tags: [weekend-read]
 ---
 
 ### Articles
