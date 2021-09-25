@@ -49,7 +49,7 @@ alias gitb='git branch'
 alias gitp='git pull'
 alias gitch='git checkout'
 ```
-There are my goto aliases on a daily basis. `cls` is probably my most used, can't live without it. If on a remote host I still do `alias cls='clear'` and go about doing my work on that host 😂 that's how much I need it.
+These are my goto aliases on a daily basis. `cls` is probably my most used, can't live without it. If on a remote host I still do `alias cls='clear'` and go about doing my work on that host 😂 that's how much I need it.
 
 Some other zsh configurations I have:
 + powerlevel10K theme
