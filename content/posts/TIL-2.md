@@ -1,7 +1,6 @@
 ---
 title: "TIL 2"
 date: 2021-09-25T12:17:43+05:30
-draft: true
 tags: [til]
 ---
 
