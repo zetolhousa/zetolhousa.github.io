@@ -1,168 +1,32 @@
-<!doctype html><html><head>
-<meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge"><title>Weekend Read 1 - Thejazeto Lhousa</title><meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Articles  Thread pools in JVM  CPU bound, Blocking and Non-blocking CPU bound should have threads at max equal to no of CPU  Blocking IO operations should never be allowed on the CPU bound pool  They need to go to separate pool     Async IO polls (non blocking) should be handled by very small number of fixed, pre-allocated threads  These just sit idle asking kernel continually if any new async IO notification is available then forward to rest of application Never do any work on this thread pool.">
-<meta property="og:image" content>
-<meta property="og:title" content="Weekend Read 1">
-<meta property="og:description" content="Articles  Thread pools in JVM  CPU bound, Blocking and Non-blocking CPU bound should have threads at max equal to no of CPU  Blocking IO operations should never be allowed on the CPU bound pool  They need to go to separate pool     Async IO polls (non blocking) should be handled by very small number of fixed, pre-allocated threads  These just sit idle asking kernel continually if any new async IO notification is available then forward to rest of application Never do any work on this thread pool.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="/posts/weekend-read-1/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2021-09-25T01:48:04+05:30">
-<meta property="article:modified_time" content="2021-09-25T01:48:04+05:30">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="Weekend Read 1">
-<meta name=twitter:description content="Articles  Thread pools in JVM  CPU bound, Blocking and Non-blocking CPU bound should have threads at max equal to no of CPU  Blocking IO operations should never be allowed on the CPU bound pool  They need to go to separate pool     Async IO polls (non blocking) should be handled by very small number of fixed, pre-allocated threads  These just sit idle asking kernel continually if any new async IO notification is available then forward to rest of application Never do any work on this thread pool.">
-<script src=/js/feather.min.js></script>
-<link href=/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css rel=stylesheet>
-<link rel=stylesheet type=text/css media=screen href=/css/main.2f9b5946627215dc1ae7fa5f82bfc9cfcab000329136befeea5733f21e77d68f.css>
-<link rel=stylesheet type=text/css href=/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css media="(prefers-color-scheme: dark)">
-<link rel=stylesheet type=text/css href=/css/syntax.307ea28af3c792131fb03d0ccf1cc452b9bc56819282ddb250ec854b7fe6c459.css>
-</head>
-<body>
-<div class=content><header>
-<div class=main>
-<a href=/>Thejazeto Lhousa</a>
-</div>
-<nav>
-<a href=/>Home</a>
+<!doctype html><html><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><title>Weekend Read 1 - Thejazeto Lhousa</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Articles Thread pools in JVM CPU bound, Blocking and Non-blocking CPU bound should have threads at max equal to no of CPU Blocking IO operations should never be allowed on the CPU bound pool They need to go to separate pool Async IO polls (non blocking) should be handled by very small number of fixed, pre-allocated threads These just sit idle asking kernel continually if any new async IO notification is available then forward to rest of application Never do any work on this thread pool."><meta property="og:image" content><meta property="og:title" content="Weekend Read 1"><meta property="og:description" content="Articles Thread pools in JVM CPU bound, Blocking and Non-blocking CPU bound should have threads at max equal to no of CPU Blocking IO operations should never be allowed on the CPU bound pool They need to go to separate pool Async IO polls (non blocking) should be handled by very small number of fixed, pre-allocated threads These just sit idle asking kernel continually if any new async IO notification is available then forward to rest of application Never do any work on this thread pool."><meta property="og:type" content="article"><meta property="og:url" content="/posts/weekend-read-1/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2021-09-25T01:48:04+05:30"><meta property="article:modified_time" content="2021-09-25T01:48:04+05:30"><meta name=twitter:card content="summary"><meta name=twitter:title content="Weekend Read 1"><meta name=twitter:description content="Articles Thread pools in JVM CPU bound, Blocking and Non-blocking CPU bound should have threads at max equal to no of CPU Blocking IO operations should never be allowed on the CPU bound pool They need to go to separate pool Async IO polls (non blocking) should be handled by very small number of fixed, pre-allocated threads These just sit idle asking kernel continually if any new async IO notification is available then forward to rest of application Never do any work on this thread pool."><script src=/js/feather.min.js></script>
+<link href=/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css rel=stylesheet><link rel=stylesheet type=text/css media=screen href=/css/main.2f9b5946627215dc1ae7fa5f82bfc9cfcab000329136befeea5733f21e77d68f.css><link rel=stylesheet type=text/css href=/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css media="(prefers-color-scheme: dark)"><link rel=stylesheet type=text/css href=/css/syntax.307ea28af3c792131fb03d0ccf1cc452b9bc56819282ddb250ec854b7fe6c459.css></head><body><div class=content><header><div class=main><a href=/>Thejazeto Lhousa</a></div><nav><a href=/>Home</a>
 <a href=/posts>All posts</a>
-<a href=/about>About</a>
-</nav>
-</header>
-<main>
-<article>
-<div class=title>
-<h1 class=title>Weekend Read 1</h1>
-<div class=meta>Posted on Sep 25, 2021</div>
-</div>
-<section class=body>
-<h3 id=articles>Articles</h3>
-<ul>
-<li><a href=https://gist.github.com/djspiewak/46b543800958cf61af6efa8e072bfd5c>Thread pools in JVM</a>
-<ul>
-<li>CPU bound, Blocking and Non-blocking</li>
-<li><strong>CPU bound</strong> should have threads at max equal to no of CPU
-<ul>
-<li><strong>Blocking IO</strong> operations should never be allowed on the CPU bound pool
-<ul>
-<li>They need to go to separate pool</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>Async IO</strong> polls (non blocking) should be handled by very small number of fixed, pre-allocated threads
-<ul>
-<li>These just sit idle asking kernel continually if any new async IO notification is available then forward to rest of application</li>
-<li>Never do any work on this thread pool. NEVER!</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href=https://www.oracle.com/java/technologies/javase/codeconventions-comments.html>Code convention: java comments</a>
-<ul>
-<li>Code block (note: this is not a javadoc comment) - snippet#1</li>
-<li>Single line comments - snippet#2</li>
-<li>Trailing comments - snippet#3</li>
-<li>End of line comments - snippet#4</li>
-<li>Java doc comments
-<ul>
-<li>After <code>/**</code> the next line follows a one space indent to align all subsequent <code>*</code></li>
-<li>These should <strong>NOT</strong> be placed inside contructors/methods</li>
-<li><a href=https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html>Annotations supported in javadoc</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href=https://www.baeldung.com/mockito-verify>Mockito verify cookbook</a>
-<ul>
-<li><code>verify(x)</code></li>
-<li><code>verify(x, y)</code></li>
-<li><code>verifyZeroInteractions(x)</code></li>
-<li><code>verifyNoMoreInteractions(x)</code></li>
-<li><code>inOrder.verify(x)</code></li>
-</ul>
-</li>
-<li><a href=https://dev.to/joemsak/git-rebase-explained-and-eventually-illustrated-5hlb>Git rebase explained visually</a></li>
-<li><a href=https://www.javadoc.io/doc/org.mockito/mockito-core/2.2.9/org/mockito/Mockito.html#RETURNS_DEEP_STUBS>Deep stubs in mockito</a>
-<ul>
-<li><code>Mockito.RETURNS_DEFAULTS</code></li>
-</ul>
-</li>
-<li><a href=https://www.haskellforall.com/2021/09/forward-and-reverse-proxies-explained.html>Reverse/foward proxies explained</a></li>
-<li><a href=https://www.swarmia.com/blog/busting-the-10x-software-engineer-myth>10x engineer myth</a>
-<ul>
-<li>tl;dr such engineers ultimately slow company down and drags scalability.</li>
-</ul>
-</li>
-<li><a href=https://supermemo.guru/wiki/Genius_checklist>Genius checklist</a>
-<ul>
-<li>tl;dr no secret sauce just a list of good habits to help memory</li>
-</ul>
-</li>
-<li><a href=https://todaypurpose.com/posts/time-money-health/>On time, money and health</a>
-<ul>
-<li>tl;dr an eye opener for those in the rat race. Shows value of time in ones short life.</li>
-</ul>
-</li>
-<li><a href=https://jacobian.org/2021/may/25/my-estimation-technique/>Software estimation 1</a>
-<ul>
-<li>It&rsquo;s hard and not accurate but still do it</li>
-<li>Estimation gets better with time</li>
-<li>Size up tasks with apt. days required for each eg: {S:1, M:3, L:5, XL:10}</li>
-<li>Unertainty multiplier: {low:1.1, med:1.5, high:2.0, extreme:5.0}</li>
-</ul>
-</li>
-<li><a href=https://tomrussell.co.uk/writing/2021/07/19/estimating-large-scale-software-projects.html>Software estimation 2</a></li>
-</ul>
-<h3 id=code-snippets>Code snippets</h3>
-<p>Snippet#1</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=color:#75715e>/*
-</span><span style=color:#75715e> * Here is a block comment.
-</span><span style=color:#75715e> */</span>
-</code></pre></div><p>Snippet#2</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=color:#66d9ef>if</span> <span style=color:#f92672>(</span>condition<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
-    <span style=color:#75715e>/* Handle the condition. */</span>
-    <span style=color:#f92672>...</span>
-<span style=color:#f92672>}</span>
-</code></pre></div><p>Snippet#3</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=color:#66d9ef>if</span> <span style=color:#f92672>(</span>a <span style=color:#f92672>==</span> 2<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
-    <span style=color:#66d9ef>return</span> TRUE<span style=color:#f92672>;</span>            <span style=color:#75715e>/* special case */</span>
-<span style=color:#f92672>}</span> <span style=color:#66d9ef>else</span> <span style=color:#f92672>{</span>
-    <span style=color:#66d9ef>return</span> isPrime<span style=color:#f92672>(</span>a<span style=color:#f92672>);</span>      <span style=color:#75715e>/* works only for odd a */</span>
-<span style=color:#f92672>}</span>
-</code></pre></div><p>Snippet#4</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=color:#66d9ef>if</span> <span style=color:#f92672>(</span>foo <span style=color:#f92672>&gt;</span> 1<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
-
-    <span style=color:#75715e>// Do a double-flip.
-</span><span style=color:#75715e></span>    <span style=color:#f92672>...</span>
-<span style=color:#f92672>}</span>
-<span style=color:#66d9ef>else</span> <span style=color:#f92672>{</span>
-    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>false</span><span style=color:#f92672>;</span>          <span style=color:#75715e>// Explain why here.
-</span><span style=color:#75715e></span><span style=color:#f92672>}</span>
-</code></pre></div><p>Snippet#4</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=color:#75715e>/**
-</span><span style=color:#75715e> * The Example class provides ...
-</span><span style=color:#75715e> */</span>
-<span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Example</span> <span style=color:#f92672>{</span>
-<span style=color:#f92672>...</span>
-<span style=color:#f92672>}</span>
-</code></pre></div>
-</section>
-<div class=post-tags>
-<nav class="nav tags">
-<ul class=tags>
-<li><a href=/tags/weekend-read>weekend-read</a></li>
-</ul>
-</nav>
-</div>
-</article>
-</main>
-<footer>
-<hr><a class=soc href=https://github.com/zetolhousa title=GitHub><i data-feather=github></i></a>|<a class=soc href=https://twitter.com/thejazeto/ title=Twitter><i data-feather=twitter></i></a>|<a class=soc href=https://www.linkedin.com/in/thejazeto/ title=LinkedIn><i data-feather=linkedin></i></a>|⚡️
-2021 ©thejazeto | <a href=https://github.com/athul/archie>Archie Theme</a> | Built with <a href=https://gohugo.io>Hugo</a>
-</footer>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-207977170-1','auto'),ga('send','pageview'))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-<script>feather.replace()</script></div>
-</body>
-</html>
+<a href=/about>About</a></nav></header><main><article><div class=title><h1 class=title>Weekend Read 1</h1><div class=meta>Posted on Sep 25, 2021</div></div><section class=body><h3 id=articles>Articles</h3><ul><li><a href=https://gist.github.com/djspiewak/46b543800958cf61af6efa8e072bfd5c>Thread pools in JVM</a><ul><li>CPU bound, Blocking and Non-blocking</li><li><strong>CPU bound</strong> should have threads at max equal to no of CPU<ul><li><strong>Blocking IO</strong> operations should never be allowed on the CPU bound pool<ul><li>They need to go to separate pool</li></ul></li></ul></li><li><strong>Async IO</strong> polls (non blocking) should be handled by very small number of fixed, pre-allocated threads<ul><li>These just sit idle asking kernel continually if any new async IO notification is available then forward to rest of application</li><li>Never do any work on this thread pool. NEVER!</li></ul></li></ul></li><li><a href=https://www.oracle.com/java/technologies/javase/codeconventions-comments.html>Code convention: java comments</a><ul><li>Code block (note: this is not a javadoc comment) - snippet#1</li><li>Single line comments - snippet#2</li><li>Trailing comments - snippet#3</li><li>End of line comments - snippet#4</li><li>Java doc comments<ul><li>After <code>/**</code> the next line follows a one space indent to align all subsequent <code>*</code></li><li>These should <strong>NOT</strong> be placed inside contructors/methods</li><li><a href=https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html>Annotations supported in javadoc</a></li></ul></li></ul></li><li><a href=https://www.baeldung.com/mockito-verify>Mockito verify cookbook</a><ul><li><code>verify(x)</code></li><li><code>verify(x, y)</code></li><li><code>verifyZeroInteractions(x)</code></li><li><code>verifyNoMoreInteractions(x)</code></li><li><code>inOrder.verify(x)</code></li></ul></li><li><a href=https://dev.to/joemsak/git-rebase-explained-and-eventually-illustrated-5hlb>Git rebase explained visually</a></li><li><a href=https://www.javadoc.io/doc/org.mockito/mockito-core/2.2.9/org/mockito/Mockito.html#RETURNS_DEEP_STUBS>Deep stubs in mockito</a><ul><li><code>Mockito.RETURNS_DEFAULTS</code></li></ul></li><li><a href=https://www.haskellforall.com/2021/09/forward-and-reverse-proxies-explained.html>Reverse/foward proxies explained</a></li><li><a href=https://www.swarmia.com/blog/busting-the-10x-software-engineer-myth>10x engineer myth</a><ul><li>tl;dr such engineers ultimately slow company down and drags scalability.</li></ul></li><li><a href=https://supermemo.guru/wiki/Genius_checklist>Genius checklist</a><ul><li>tl;dr no secret sauce just a list of good habits to help memory</li></ul></li><li><a href=https://todaypurpose.com/posts/time-money-health/>On time, money and health</a><ul><li>tl;dr an eye opener for those in the rat race. Shows value of time in ones short life.</li></ul></li><li><a href=https://jacobian.org/2021/may/25/my-estimation-technique/>Software estimation 1</a><ul><li>It&rsquo;s hard and not accurate but still do it</li><li>Estimation gets better with time</li><li>Size up tasks with apt. days required for each eg: {S:1, M:3, L:5, XL:10}</li><li>Unertainty multiplier: {low:1.1, med:1.5, high:2.0, extreme:5.0}</li></ul></li><li><a href=https://tomrussell.co.uk/writing/2021/07/19/estimating-large-scale-software-projects.html>Software estimation 2</a></li></ul><h3 id=code-snippets>Code snippets</h3><p>Snippet#1</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#75715e>/*
+</span></span></span><span style=display:flex><span><span style=color:#75715e> * Here is a block comment.
+</span></span></span><span style=display:flex><span><span style=color:#75715e> */</span>
+</span></span></code></pre></div><p>Snippet#2</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>if</span> <span style=color:#f92672>(</span>condition<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>/* Handle the condition. */</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>...</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span></code></pre></div><p>Snippet#3</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>if</span> <span style=color:#f92672>(</span>a <span style=color:#f92672>==</span> <span style=color:#ae81ff>2</span><span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> TRUE<span style=color:#f92672>;</span>            <span style=color:#75715e>/* special case */</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span> <span style=color:#66d9ef>else</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> isPrime<span style=color:#f92672>(</span>a<span style=color:#f92672>);</span>      <span style=color:#75715e>/* works only for odd a */</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span></code></pre></div><p>Snippet#4</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>if</span> <span style=color:#f92672>(</span>foo <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>1</span><span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Do a double-flip.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#f92672>...</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>else</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>false</span><span style=color:#f92672>;</span>          <span style=color:#75715e>// Explain why here.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#f92672>}</span>
+</span></span></code></pre></div><p>Snippet#4</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#75715e>/**
+</span></span></span><span style=display:flex><span><span style=color:#75715e> * The Example class provides ...
+</span></span></span><span style=display:flex><span><span style=color:#75715e> */</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Example</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>...</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span></code></pre></div></section><div class=post-tags><nav class="nav tags"><ul class=tags><li><a href=/tags/weekend-read>weekend-read</a></li></ul></nav></div></article></main><footer><hr><a class=soc href=https://github.com/zetolhousa title=GitHub><i data-feather=github></i></a>|<a class=soc href=https://twitter.com/thejazeto/ title=Twitter><i data-feather=twitter></i></a>|<a class=soc href=https://www.linkedin.com/in/thejazeto/ title=LinkedIn><i data-feather=linkedin></i></a>|⚡️
+2022 ©thejazeto | <a href=https://github.com/athul/archie>Archie Theme</a> | Built with <a href=https://gohugo.io>Hugo</a></footer><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-207977170-1","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script>
+<script>feather.replace()</script></div></body></html>
