@@ -1,6 +1,7 @@
 ---
-title: "My Dev Journal"
+title: "My Dev Journal (could be yours too)"
 date: 2022-12-06T20:23:12+05:30
+tags: [productivity]
 ---
 
 If you read tech blogs you’ll come across articles stating how important how important it is to maintain a dev journal or bragging doc or what have you. Basically it’s just a doc where you track all that you have done, read, watched, etc.
