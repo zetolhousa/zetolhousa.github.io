@@ -12,7 +12,7 @@ So if you are someone who finds yourself in the terminal most of your days this 
 
 - Terminal
 - `curl` CLI tool (which is inbuilt in most cases)
-- `jq` CLI command (google "how to install jq in *your_os*)`
+- `jq` CLI command (google "how to install jq in *your_os*)
 
 That's it!
 
