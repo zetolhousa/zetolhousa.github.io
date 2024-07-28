@@ -1,0 +1,94 @@
+<!doctype html><html><head lang=en><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>Common Dev Tooling Quickref - Thejazeto Lhousa</title><meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Some useful commands for some common dev tools. Assumption is that the reader is already familiar with the tools.
+Vim Replace all instances: %s/orignal/replacement/g Get sudo write after entering vim without sudo :w !sudo tee % See filename ctrl + g Delete lines matching pattern :g/<pattern>/d` (remove /d if only to show patterns) Highlight multiple patterns :/\vpattern1|pattern2|… Go to bottom of match GN Got to top of match ggn Set and unset line numbers and relative numbers inside vim :set nu rnu :set nonu nornu Show x out of y count for searches :set shormess-=S Terminal save output to file/code $ <command> 2>&amp;1 | tee file."><meta property="og:image" content><meta property="og:url" content="/posts/common-dev-tooling-quickref/"><meta property="og:site_name" content="Thejazeto Lhousa"><meta property="og:title" content="Common Dev Tooling Quickref"><meta property="og:description" content="Some useful commands for some common dev tools. Assumption is that the reader is already familiar with the tools.
+Vim Replace all instances: %s/orignal/replacement/g Get sudo write after entering vim without sudo :w !sudo tee % See filename ctrl + g Delete lines matching pattern :g/<pattern>/d` (remove /d if only to show patterns) Highlight multiple patterns :/\vpattern1|pattern2|… Go to bottom of match GN Got to top of match ggn Set and unset line numbers and relative numbers inside vim :set nu rnu :set nonu nornu Show x out of y count for searches :set shormess-=S Terminal save output to file/code $ <command> 2>&amp;1 | tee file."><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-07-28T19:00:55+05:30"><meta property="article:modified_time" content="2024-07-28T19:00:55+05:30"><meta name=twitter:card content="summary"><meta name=twitter:title content="Common Dev Tooling Quickref"><meta name=twitter:description content="Some useful commands for some common dev tools. Assumption is that the reader is already familiar with the tools.
+Vim Replace all instances: %s/orignal/replacement/g Get sudo write after entering vim without sudo :w !sudo tee % See filename ctrl + g Delete lines matching pattern :g/<pattern>/d` (remove /d if only to show patterns) Highlight multiple patterns :/\vpattern1|pattern2|… Go to bottom of match GN Got to top of match ggn Set and unset line numbers and relative numbers inside vim :set nu rnu :set nonu nornu Show x out of y count for searches :set shormess-=S Terminal save output to file/code $ <command> 2>&amp;1 | tee file."><script src=/js/feather.min.js></script><link href=/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css rel=stylesheet><link rel=stylesheet type=text/css media=screen href=/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css><link id=darkModeStyle rel=stylesheet type=text/css href=/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css media="(prefers-color-scheme: dark)"><link rel=stylesheet type=text/css href=/css/syntax.307ea28af3c792131fb03d0ccf1cc452b9bc56819282ddb250ec854b7fe6c459.css></head><body><div class=content><header><div class=main><a href=/>Thejazeto Lhousa</a></div><nav><a href=/>Home</a>
+<a href=/posts>All posts</a>
+<a href=/about>About</a></nav></header><main><article><div class=title><h1 class=title>Common Dev Tooling Quickref</h1><div class=meta>Posted on Jul 28, 2024</div></div><section class=body><p>Some useful commands for some common dev tools. Assumption is that the reader is already familiar with the tools.</p><h2 id=vim>Vim</h2><ul><li>Replace all instances:</li></ul><pre tabindex=0><code>%s/orignal/replacement/g
+</code></pre><ul><li><a href=https://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work>Get sudo write after entering vim without sudo</a></li></ul><pre tabindex=0><code>:w !sudo tee %
+</code></pre><ul><li>See filename</li></ul><pre tabindex=0><code>ctrl + g
+</code></pre><ul><li>Delete lines matching pattern</li></ul><pre tabindex=0><code>:g/&lt;pattern&gt;/d` (remove /d if only to show patterns)
+</code></pre><ul><li>Highlight multiple patterns</li></ul><pre tabindex=0><code>:/\vpattern1|pattern2|…
+</code></pre><ul><li>Go to bottom of match</li></ul><pre tabindex=0><code>GN
+</code></pre><ul><li>Got to top of match</li></ul><pre tabindex=0><code>ggn
+</code></pre><ul><li>Set and unset line numbers and relative numbers inside vim</li></ul><pre tabindex=0><code>:set nu rnu
+:set nonu nornu
+</code></pre><ul><li>Show x out of y count for searches</li></ul><pre tabindex=0><code>:set shormess-=S
+</code></pre><h2 id=terminal>Terminal</h2><ul><li>save output to file/code</li></ul><pre tabindex=0><code>$ &lt;command&gt; 2&gt;&amp;1 | tee file.txt
+</code></pre><ul><li>dig, whatis, whois, whoami</li><li>TOTRY: tldr, exa, btop, lsd, duff</li><li>show process tree</li></ul><pre tabindex=0><code>$ pstree -p (linux only)
+</code></pre><ul><li>run command in background</li></ul><pre tabindex=0><code>$ nohup &lt;other command&gt; &amp;
+$ fg #to bring it back
+$ jobs #to list process in background
+</code></pre><ul><li>switch user</li></ul><pre tabindex=0><code>$ su - &lt;username&gt;
+</code></pre><ul><li><a href=https://cheat.sh/>cheat.sh</a></li></ul><pre tabindex=0><code>$ sudo curl -s https://cht.sh/:cht.sh &gt; [cht.sh](http://cht.sh/)
+$ sudo mv [cht.sh](http://cht.sh/) /usr/local/bin
+$ sudo chmod +x /usr/local/bin/cht.sh
+</code></pre><ul><li>set up cronjob</li></ul><pre tabindex=0><code>crontab -e
+#&lt;schedule_pattern&gt; &lt;path_to_executable_script&gt; 
+#http://crontab.guru/
+</code></pre><ul><li>ssh with agent forwarding</li></ul><pre tabindex=0><code>ssh -A &lt;host&gt;
+#or just modify the .ssh/config file with `ForwardAgent=yes`
+</code></pre><ul><li>Keeping keys in memory</li></ul><pre tabindex=0><code>$ eval `ssh-agent`
+$ ssh-add &lt;*secret_keys*&gt;
+$ ssh-add --apple-use-keychain .ssh/id_rsa #for mac
+$ `ssh-add -L #list keys added
+</code></pre><ul><li>Remove keys for a host</li></ul><pre tabindex=0><code>$ ssh-keygen -R &lt;host&gt;
+</code></pre><ul><li>Resolving “REMOTE HOST IDENTIFICATION HAS CHANGED!” warning when ssh-ing</li></ul><pre tabindex=0><code>$ ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null &lt;host&gt;
+</code></pre><ul><li>access a website from terminal</li></ul><pre tabindex=0><code>$ curl -i &lt;url&gt;
+</code></pre><ul><li>get active ssh sessions</li></ul><pre tabindex=0><code>$ who
+</code></pre><ul><li>get all python versions</li></ul><pre tabindex=0><code>$ ls -ls /usr/bin/python* | awk ‘{ print $10 }’
+</code></pre><ul><li>get IP of laptop</li></ul><pre tabindex=0><code>$ ipconfig getifaddr en0
+</code></pre><ul><li>get environment variables</li></ul><pre tabindex=0><code>$ env #current session level
+$ set #system wide level
+</code></pre><ul><li>decompress gzipped files (.gz)</li></ul><pre tabindex=0><code>$ gzip -d &lt;file&gt;
+</code></pre><ul><li>extract tar file</li></ul><pre tabindex=0><code>$ tar -xf &lt;file&gt;
+</code></pre><ul><li>get md5 diffs</li></ul><pre tabindex=0><code>$ md5sum &lt;files...&gt;
+</code></pre><ul><li>get permissions of current user</li></ul><pre tabindex=0><code>$ id
+$ sudo -l
+</code></pre><ul><li>copy all modified git files into a folder</li></ul><pre tabindex=0><code>$ git status -s | grep M | awk &#39;{print $2}&#39; | xargs -I {} cp --parents {} diff/
+</code></pre><ul><li>find all files in directory tree and move them</li></ul><pre tabindex=0><code>$ find . -type f | xargs -I {} cp {} u18/
+</code></pre><ul><li>Find filename pattern</li></ul><pre tabindex=0><code>$ find . -name &#34;regex_pattern&#34;
+</code></pre><ul><li>Find directory</li></ul><pre tabindex=0><code>$ find . -type d -name &#34;regex_pattern&#34;
+</code></pre><ul><li>Change default shell to zsh</li></ul><pre tabindex=0><code>$ chsh -s $(which zsh)
+</code></pre><ul><li><a href=https://www.tecmint.com/set-system-locales-in-linux/>Set locale</a></li></ul><pre tabindex=0><code>$ export LC_ALL=C.UTF-8
+</code></pre><ul><li>Debug core dumps</li></ul><pre tabindex=0><code>$ gdb program_file core_file
+</code></pre><ul><li>View core size limit</li></ul><pre tabindex=0><code>ulimit -c
+</code></pre><ul><li>Grep around a pattern</li></ul><pre tabindex=0><code>$ grep -B 4 -A 4 foo_pattern README.txt` #4 lines Before and After pattern
+$ grep -C 4 pattern #simpler
+</code></pre><ul><li><a href=https://www.digitalocean.com/community/tutorials/using-grep-regular-expressions-to-search-for-text-patterns-in-linux>Grep with regex</a></li></ul><pre tabindex=0><code>$ grep &#34;^pattern&#34; #should start with pattern
+$ grep &#34;pattern$&#34; #should end with pattern
+$ grep &#34;..ttern&#34; #matches any two chars followed by pattern eg: pattern, sottern, kettern
+$ grep &#34;p[aou]ttern&#34; #pattern should match one of the chars in brackets
+$ grep &#39;pattern1\|pattern2&#39; #OR condition
+</code></pre><ul><li>Grep header row as well</li></ul><pre tabindex=0><code>$ &lt;command&gt; | grep -E &#39;column|pattern&#39;
+</code></pre><ul><li>Live grep</li></ul><pre tabindex=0><code>$ tail -f &lt;file&gt; | grep &lt;pattern&gt;
+</code></pre><ul><li>Number of lines in a gzipped file</li></ul><pre tabindex=0><code>$ zcat &lt;file&gt; | wc -l
+</code></pre><ul><li>To know if your machine is virtual machine or bare-metal</li></ul><pre tabindex=0><code>$ virt-what #returns nothing if bare-metal
+</code></pre><ul><li>Block device info</li></ul><pre tabindex=0><code>$ blkid or lsblk
+</code></pre><ul><li>View boot logs</li></ul><pre tabindex=0><code>$ journalctl -b -1
+</code></pre><ul><li>Get time in epoch</li></ul><pre tabindex=0><code>$ date +%s
+</code></pre><ul><li>Change timezone</li></ul><pre tabindex=0><code>$ sudo timedatectl set-timezone UTC
+</code></pre><ul><li>Sort lines in a file</li></ul><pre tabindex=0><code>$ sort -o file file
+</code></pre><ul><li>View kernel configs</li></ul><pre tabindex=0><code>$ zcat /proc/config.gz | grep CONFIG_FRAME_WARN
+</code></pre><ul><li>Dedupe hourly log filenames to get unique filename in directory:</li></ul><pre tabindex=0><code>$ ls | sed &#39;s/-[0-9]\{10\}\(\.tar\)\?\.\(gz\|zst\)//&#39; | sort | uniq
+# eg: hello.log-2024022115.gz ⇒ hello.log
+</code></pre><ul><li>Create symlink</li></ul><pre tabindex=0><code>$ ln -s &lt;source&gt; &lt;symlink&gt;
+</code></pre><h2 id=tmux>Tmux</h2><ul><li>Swap panes</li></ul><pre tabindex=0><code>: switch-pane -s&lt;pane#&gt; -t&lt;pane#&gt;
+</code></pre><ul><li>Sync all panes (set and unset)</li></ul><pre tabindex=0><code>: setw synchronize-pane
+</code></pre><h2 id=git>Git</h2><ul><li>Auto add upstream</li></ul><pre tabindex=0><code>$ git config --global --add --bool push.autoSetupRemote true
+</code></pre><ul><li>Show commit by a sha</li></ul><pre tabindex=0><code>$ git show d41ed690882c2345a249e17a1908232f92163a
+</code></pre><ul><li>Rename branch</li></ul><pre tabindex=0><code>$ git branch -m old new
+</code></pre><ul><li>Create branch from source and new</li></ul><pre tabindex=0><code>$ git checkout -b new old
+</code></pre><ul><li>Diff file between two branch</li></ul><pre tabindex=0><code>$ git diff branch1 branch2 -- filename
+</code></pre><ul><li>Show commits from one author</li></ul><pre tabindex=0><code>$ git log --author=&#39;email&#39;
+</code></pre><ul><li>Show which branch contains commit</li></ul><pre tabindex=0><code>$ git branch --contains 086062f79c5 #add -r to search remote
+</code></pre><ul><li>Show branch matching name</li></ul><pre tabindex=0><code>$ git branch -rl ‘*pattern*’
+</code></pre><ul><li>Show changes by commit</li></ul><pre tabindex=0><code>$ git diff commit~ commit
+</code></pre><ul><li>Push a branch without checking out</li></ul><pre tabindex=0><code>$ git push --set-upstream origin &lt;branch&gt;
+</code></pre><ul><li>Show commits matching string</li></ul><pre tabindex=0><code>$ git log --grep &#34;&lt;pattern&gt;&#34;
+</code></pre><ul><li>Replace local branch with remote (first checkout )</li></ul><pre tabindex=0><code>$ git reset --hard origin/&lt;branch&gt;
+</code></pre><ul><li>Sync files by not copying unnecessarily</li></ul><pre tabindex=0><code>rsync -avzhe ssh --checksum user@machine1:/remote_source/ /local_destination/ | grep -q &#39;Number of files transferred: 0&#39;
+</code></pre></section><div class=post-tags></div></article></main><footer><div style=display:flex><a class=soc href=https://github.com/zetolhousa rel=me title=GitHub><i data-feather=github></i></a>
+<a class=border></a><a class=soc href=https://twitter.com/thejazeto/ rel=me title=Twitter><i data-feather=twitter></i></a>
+<a class=border></a><a class=soc href=https://www.linkedin.com/in/thejazeto/ rel=me title=LinkedIn><i data-feather=linkedin></i></a>
+<a class=border></a></div><div class=footer-info>2024 ©thejazeto | <a href=https://github.com/athul/archie>Archie Theme</a> | Built with <a href=https://gohugo.io>Hugo</a></div></footer><script>feather.replace()</script></div></body></html>
