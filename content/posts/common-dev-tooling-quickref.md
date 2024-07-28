@@ -356,3 +356,8 @@ $ git reset --hard origin/<branch>
 ```
 rsync -avzhe ssh --checksum user@machine1:/remote_source/ /local_destination/ | grep -q 'Number of files transferred: 0'
 ```
+
+## Other useful resources
+* https://github.com/onceupon/Bash-Oneliner
+* https://github.com/jlevy/the-art-of-command-line
+* https://github.com/you-dont-need/You-Dont-Need-GUI
