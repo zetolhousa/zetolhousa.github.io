@@ -4,7 +4,7 @@ title = 'Thejazeto Lhousa'
 theme = 'archie'
 copyright = '©thejazeto'
 paginate = 30
-googleAnalyticsID = 'G-KEHSFWY6K9'
+googleAnalytics = 'G-KEHSFWY6K9'
 
 [params]
 	mode="auto" # color-mode → light,dark or auto
