@@ -1,3 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Utility on Thejazeto Lhousa</title><link>/tags/utility/</link><description>Recent content in Utility on Thejazeto Lhousa</description><generator>Hugo</generator><language>en-us</language><copyright>©thejazeto</copyright><lastBuildDate>Tue, 11 Jul 2023 22:05:07 +0530</lastBuildDate><atom:link href="/tags/utility/index.xml" rel="self" type="application/rss+xml"/><item><title>Util: CLI Dictionary</title><link>/posts/util-cli-dict/</link><pubDate>Tue, 11 Jul 2023 22:05:07 +0530</pubDate><guid>/posts/util-cli-dict/</guid><description>I end up having to lookup certain words which I&amp;rsquo;m not familiar with often and even though spotlight(macOS) provides quick lookup sometimes it mixes up with other files or OS related applications.
-So if you are someone who finds yourself in the terminal most of your days this will be helpful.
-What you&amp;rsquo;ll need Terminal curl CLI tool (which is inbuilt in most cases) jq CLI command (google &amp;ldquo;how to install jq in your_os) That&amp;rsquo;s it!</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Utility on Thejazeto Lhousa</title><link>/tags/utility/</link><description>Recent content in Utility on Thejazeto Lhousa</description><generator>Hugo</generator><language>en-us</language><copyright>©thejazeto</copyright><lastBuildDate>Tue, 11 Jul 2023 22:05:07 +0530</lastBuildDate><atom:link href="/tags/utility/index.xml" rel="self" type="application/rss+xml"/><item><title>Util: CLI Dictionary</title><link>/posts/util-cli-dict/</link><pubDate>Tue, 11 Jul 2023 22:05:07 +0530</pubDate><guid>/posts/util-cli-dict/</guid><description>&lt;p>I end up having to lookup certain words which I&amp;rsquo;m not familiar with often and even though spotlight(macOS) provides quick lookup sometimes it mixes up with other files or OS related applications.&lt;/p>
+&lt;p>So if you are someone who finds yourself in the terminal most of your days this will be helpful.&lt;/p>
+&lt;h2 id="what-youll-need">What you&amp;rsquo;ll need&lt;/h2>
+&lt;ul>
+&lt;li>Terminal&lt;/li>
+&lt;li>&lt;code>curl&lt;/code> CLI tool (which is inbuilt in most cases)&lt;/li>
+&lt;li>&lt;code>jq&lt;/code> CLI command (google &amp;ldquo;how to install jq in &lt;em>your_os&lt;/em>)&lt;/li>
+&lt;/ul>
+&lt;p>That&amp;rsquo;s it!&lt;/p></description></item></channel></rss>

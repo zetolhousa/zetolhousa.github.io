@@ -1,1 +1,80 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Weekend-Read on Thejazeto Lhousa</title><link>/tags/weekend-read/</link><description>Recent content in Weekend-Read on Thejazeto Lhousa</description><generator>Hugo</generator><language>en-us</language><copyright>©thejazeto</copyright><lastBuildDate>Sat, 25 Sep 2021 01:48:04 +0530</lastBuildDate><atom:link href="/tags/weekend-read/index.xml" rel="self" type="application/rss+xml"/><item><title>Weekend Read 1</title><link>/posts/weekend-read-1/</link><pubDate>Sat, 25 Sep 2021 01:48:04 +0530</pubDate><guid>/posts/weekend-read-1/</guid><description>Articles Thread pools in JVM CPU bound, Blocking and Non-blocking CPU bound should have threads at max equal to no of CPU Blocking IO operations should never be allowed on the CPU bound pool They need to go to separate pool Async IO polls (non blocking) should be handled by very small number of fixed, pre-allocated threads These just sit idle asking kernel continually if any new async IO notification is available then forward to rest of application Never do any work on this thread pool.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Weekend-Read on Thejazeto Lhousa</title><link>/tags/weekend-read/</link><description>Recent content in Weekend-Read on Thejazeto Lhousa</description><generator>Hugo</generator><language>en-us</language><copyright>©thejazeto</copyright><lastBuildDate>Sat, 25 Sep 2021 01:48:04 +0530</lastBuildDate><atom:link href="/tags/weekend-read/index.xml" rel="self" type="application/rss+xml"/><item><title>Weekend Read 1</title><link>/posts/weekend-read-1/</link><pubDate>Sat, 25 Sep 2021 01:48:04 +0530</pubDate><guid>/posts/weekend-read-1/</guid><description>&lt;h3 id="articles">Articles&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://gist.github.com/djspiewak/46b543800958cf61af6efa8e072bfd5c">Thread pools in JVM&lt;/a>
+&lt;ul>
+&lt;li>CPU bound, Blocking and Non-blocking&lt;/li>
+&lt;li>&lt;strong>CPU bound&lt;/strong> should have threads at max equal to no of CPU
+&lt;ul>
+&lt;li>&lt;strong>Blocking IO&lt;/strong> operations should never be allowed on the CPU bound pool
+&lt;ul>
+&lt;li>They need to go to separate pool&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Async IO&lt;/strong> polls (non blocking) should be handled by very small number of fixed, pre-allocated threads
+&lt;ul>
+&lt;li>These just sit idle asking kernel continually if any new async IO notification is available then forward to rest of application&lt;/li>
+&lt;li>Never do any work on this thread pool. NEVER!&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://www.oracle.com/java/technologies/javase/codeconventions-comments.html">Code convention: java comments&lt;/a>
+&lt;ul>
+&lt;li>Code block (note: this is not a javadoc comment) - snippet#1&lt;/li>
+&lt;li>Single line comments - snippet#2&lt;/li>
+&lt;li>Trailing comments - snippet#3&lt;/li>
+&lt;li>End of line comments - snippet#4&lt;/li>
+&lt;li>Java doc comments
+&lt;ul>
+&lt;li>After &lt;code>/**&lt;/code> the next line follows a one space indent to align all subsequent &lt;code>*&lt;/code>&lt;/li>
+&lt;li>These should &lt;strong>NOT&lt;/strong> be placed inside contructors/methods&lt;/li>
+&lt;li>&lt;a href="https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html">Annotations supported in javadoc&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://www.baeldung.com/mockito-verify">Mockito verify cookbook&lt;/a>
+&lt;ul>
+&lt;li>&lt;code>verify(x)&lt;/code>&lt;/li>
+&lt;li>&lt;code>verify(x, y)&lt;/code>&lt;/li>
+&lt;li>&lt;code>verifyZeroInteractions(x)&lt;/code>&lt;/li>
+&lt;li>&lt;code>verifyNoMoreInteractions(x)&lt;/code>&lt;/li>
+&lt;li>&lt;code>inOrder.verify(x)&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://dev.to/joemsak/git-rebase-explained-and-eventually-illustrated-5hlb">Git rebase explained visually&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.javadoc.io/doc/org.mockito/mockito-core/2.2.9/org/mockito/Mockito.html#RETURNS_DEEP_STUBS">Deep stubs in mockito&lt;/a>
+&lt;ul>
+&lt;li>&lt;code>Mockito.RETURNS_DEFAULTS&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://www.haskellforall.com/2021/09/forward-and-reverse-proxies-explained.html">Reverse/foward proxies explained&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.swarmia.com/blog/busting-the-10x-software-engineer-myth">10x engineer myth&lt;/a>
+&lt;ul>
+&lt;li>tl;dr such engineers ultimately slow company down and drags scalability.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://supermemo.guru/wiki/Genius_checklist">Genius checklist&lt;/a>
+&lt;ul>
+&lt;li>tl;dr no secret sauce just a list of good habits to help memory&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://todaypurpose.com/posts/time-money-health/">On time, money and health&lt;/a>
+&lt;ul>
+&lt;li>tl;dr an eye opener for those in the rat race. Shows value of time in ones short life.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://jacobian.org/2021/may/25/my-estimation-technique/">Software estimation 1&lt;/a>
+&lt;ul>
+&lt;li>It&amp;rsquo;s hard and not accurate but still do it&lt;/li>
+&lt;li>Estimation gets better with time&lt;/li>
+&lt;li>Size up tasks with apt. days required for each eg: {S:1, M:3, L:5, XL:10}&lt;/li>
+&lt;li>Unertainty multiplier: {low:1.1, med:1.5, high:2.0, extreme:5.0}&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://tomrussell.co.uk/writing/2021/07/19/estimating-large-scale-software-projects.html">Software estimation 2&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="code-snippets">Code snippets&lt;/h3>
+&lt;p>Snippet#1&lt;/p></description></item></channel></rss>

@@ -1,21 +1,459 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Thejazeto Lhousa</title><link>/posts/</link><description>Recent content in Posts on Thejazeto Lhousa</description><generator>Hugo</generator><language>en-us</language><copyright>©thejazeto</copyright><lastBuildDate>Fri, 09 Aug 2024 23:52:13 +0530</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>LC: 1004</title><link>/posts/lc-1004/</link><pubDate>Fri, 09 Aug 2024 23:52:13 +0530</pubDate><guid>/posts/lc-1004/</guid><description>I was trying to solve this leetcode problem and had to refer the solutions after some minutes attempting it. Then came across this super simple ingenious solution. Took a lot of time trying to wrap my head around it. So I thought I&amp;rsquo;d just share my thought process was like trying to digest this super simple looking yet miraculous code:
-Max consecutive ones iii Link: https://leetcode.com/problems/max-consecutive-ones-iii
-Note: you&amp;rsquo;ll need basic understanding of what this problem is asking for and may a preliminary very high level overview of the code flow</description></item><item><title>Common Dev Tooling Quickref</title><link>/posts/common-dev-tooling-quickref/</link><pubDate>Sun, 28 Jul 2024 19:00:55 +0530</pubDate><guid>/posts/common-dev-tooling-quickref/</guid><description>Some useful commands for some common dev tools. Assumption is that the reader is already familiar with the tools.
-Vim Replace all instances: %s/orignal/replacement/g Get sudo write after entering vim without sudo :w !sudo tee % See filename ctrl + g Delete lines matching pattern :g/&amp;lt;pattern&amp;gt;/d` (remove /d if only to show patterns) Highlight multiple patterns :/\vpattern1|pattern2|… Go to bottom of match GN Got to top of match ggn Set and unset line numbers and relative numbers inside vim :set nu rnu :set nonu nornu Show x out of y count for searches :set shormess-=S Terminal save output to file/code $ &amp;lt;command&amp;gt; 2&amp;gt;&amp;amp;1 | tee file.</description></item><item><title>Newbie Tax Traps</title><link>/posts/newbie-tax-traps/</link><pubDate>Thu, 11 Jul 2024 23:23:50 +0530</pubDate><guid>/posts/newbie-tax-traps/</guid><description>Taxes! Something you learn on the field often after it&amp;rsquo;s too late. Here are some things I wish someone told me.
-⚠️Disclaimer: These are just words cooked up from my head and not definitive or exact. More like recalling stories from personal experience. The details I&amp;rsquo;ll leave it to you and google or CA.
-1) Reporting your mid FY job change TL;DR report your previous employer as soon as you join new company</description></item><item><title>My Dev Journal V2</title><link>/posts/my-dev-journal-v2/</link><pubDate>Thu, 11 Jul 2024 01:35:41 +0530</pubDate><guid>/posts/my-dev-journal-v2/</guid><description>Since the first blog on a dev journal here, I&amp;rsquo;ve made some changes.
-With the onset of LLMs I&amp;rsquo;ve gotten help from chatGPT to upgrade my dev journal workflow.
-Some things that have not changed are the log markdown file(daily_log.md) where your logs go into and the alias names.
-Things that have changed:
-1) Shell script Instead of having a cron job update the daily dates and month headers on a set time, which can and will fail to run if your machine is not ON at the time of cron schedule.</description></item><item><title>Util: CLI Dictionary</title><link>/posts/util-cli-dict/</link><pubDate>Tue, 11 Jul 2023 22:05:07 +0530</pubDate><guid>/posts/util-cli-dict/</guid><description>I end up having to lookup certain words which I&amp;rsquo;m not familiar with often and even though spotlight(macOS) provides quick lookup sometimes it mixes up with other files or OS related applications.
-So if you are someone who finds yourself in the terminal most of your days this will be helpful.
-What you&amp;rsquo;ll need Terminal curl CLI tool (which is inbuilt in most cases) jq CLI command (google &amp;ldquo;how to install jq in your_os) That&amp;rsquo;s it!</description></item><item><title>My Dev Journal (could be yours too)</title><link>/posts/my-dev-journal/</link><pubDate>Tue, 06 Dec 2022 20:23:12 +0530</pubDate><guid>/posts/my-dev-journal/</guid><description>If you read tech blogs you’ll come across articles stating how important how important it is to maintain a dev journal or bragging doc or what have you. Basically it’s just a doc where you track all that you have done, read, watched, etc.
-Your brain being a finite resource can only hold so much information. Over time you lose track of the code change you made, the valuable life advice you gave to that junior, some quote someone said over a meeting.</description></item><item><title>Product Review: AirPod Pro vs Nothing ear(1)</title><link>/posts/product-review-earpods/</link><pubDate>Sat, 25 Sep 2021 21:36:45 +0530</pubDate><guid>/posts/product-review-earpods/</guid><description>I&amp;rsquo;ve owned the AirPod Pros for a little over a year and the Nothing ear(1) for about 2 weeks as of this writing. Below I share some personal experiences and opinions which may help in deciding if caught in a dillema between the two amazing products.
-Official product links:
-AirPods Pro Nothing ear(1) Let&amp;rsquo;s get started&amp;hellip;
-Active Noise Cancellation (ANC) This is a close one at least in my ears. They both keep out noise pretty well.</description></item><item><title>My Dotfile Favorites</title><link>/posts/my-dotfile-favorites/</link><pubDate>Sat, 25 Sep 2021 15:58:55 +0530</pubDate><guid>/posts/my-dotfile-favorites/</guid><description>Dotfiles are used to customize your system. The “dotfiles” name is derived from the configuration files in Unix-like systems that start with a dot (e.g. .bash_profile and .gitconfig). In this post I will share some of my most used configurations for some common dotfiles.
-.zshrc greph () { fc -ln 0 | grep --color=auto $1 | awk &amp;#39;!seen[$0]++&amp;#39; | sed -e &amp;#39;s/^/&amp;gt;&amp;gt; /&amp;#39; } I love this one. Probably my favorite in this dotfile.</description></item><item><title>TIL 2</title><link>/posts/til-2/</link><pubDate>Sat, 25 Sep 2021 12:17:43 +0530</pubDate><guid>/posts/til-2/</guid><description>jq command A command to manipulate json files. At work we usually have a bunch json serialized ouputs in S3 or some other datastore, which are absurdly many lines long and deeply nested. Often, if I need to grep something out of it, I&amp;rsquo;ll just copy and paste it to a company internal json prettifier to make it human readable and get what I need. There must be some out on the web too.</description></item><item><title>Weekend Read 1</title><link>/posts/weekend-read-1/</link><pubDate>Sat, 25 Sep 2021 01:48:04 +0530</pubDate><guid>/posts/weekend-read-1/</guid><description>Articles Thread pools in JVM CPU bound, Blocking and Non-blocking CPU bound should have threads at max equal to no of CPU Blocking IO operations should never be allowed on the CPU bound pool They need to go to separate pool Async IO polls (non blocking) should be handled by very small number of fixed, pre-allocated threads These just sit idle asking kernel continually if any new async IO notification is available then forward to rest of application Never do any work on this thread pool.</description></item><item><title>Favorite Finance Apps</title><link>/posts/favorite-finance-apps/</link><pubDate>Tue, 21 Sep 2021 05:27:54 +0530</pubDate><guid>/posts/favorite-finance-apps/</guid><description>Bank apps The banks own apps to manage accounts. For the purposes of checking statements. Basic banking. CRED For tracking my credit cards and their due dates so that I don&amp;rsquo;t miss anything. It also gives a very nice visual of the statements for the billing cycles. The raw PDFs generated by banks are too unorganized and hard to read. INDmoney Tracking all my assets and liabilities. All my investments, stocks, EPF, savings and insurances get tracked here.</description></item><item><title>TIL 1</title><link>/posts/til-1/</link><pubDate>Mon, 20 Sep 2021 12:32:57 +0530</pubDate><guid>/posts/til-1/</guid><description>Today I Learned a.k.a TIL
-FactoryBean An amazing way to instantiate your beans based on different situations or conditions.
-Example use case: I want a specific implementation of an interface based on some launch date. I can define that in the factory.
-public class MessageFactoryBean implements FactoryBean&amp;lt;MessageInterface&amp;gt; { private MessageInterface postcard; private MessageInterface letter; public MessageInterface getObject() { if (your condition here) { return letter; } return postcard; } // other methods omitted } Where MessageInterface is implemented by PostCard and FormalLetter.</description></item><item><title>Things I wish I learnt before getting a job</title><link>/posts/things-i-wish-i-learnt-before-job/</link><pubDate>Sun, 19 Sep 2021 14:36:20 +0530</pubDate><guid>/posts/things-i-wish-i-learnt-before-job/</guid><description>Disclaimer: there is only so much you can prepare in advance. You’ll mostly learn everything on the job itself but I think there are some learnings which can take off the load. Instead of trying to play catch up while on the job.
-Most of the big tech companies have in-house tooling which is a beast in itself to learn (depending on the company and how much internal tools they own).</description></item><item><title>First</title><link>/posts/first/</link><pubDate>Sun, 19 Sep 2021 14:10:19 +0530</pubDate><guid>/posts/first/</guid><description>Hello world</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Thejazeto Lhousa</title><link>/posts/</link><description>Recent content in Posts on Thejazeto Lhousa</description><generator>Hugo</generator><language>en-us</language><copyright>©thejazeto</copyright><lastBuildDate>Fri, 09 Aug 2024 23:52:13 +0530</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>LC: 1004</title><link>/posts/lc-1004/</link><pubDate>Fri, 09 Aug 2024 23:52:13 +0530</pubDate><guid>/posts/lc-1004/</guid><description>&lt;p>I was trying to solve this leetcode problem and had to refer the solutions after some minutes attempting it. Then came across this super simple ingenious solution. Took a lot of time trying to wrap my head around it. So I thought I&amp;rsquo;d just share my thought process was like trying to digest this super simple looking yet miraculous code:&lt;/p>
+&lt;h3 id="max-consecutive-ones-iii">Max consecutive ones iii&lt;/h3>
+&lt;p>Link: &lt;a href="https://leetcode.com/problems/max-consecutive-ones-iii">https://leetcode.com/problems/max-consecutive-ones-iii&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>Note: you&amp;rsquo;ll need basic understanding of what this problem is asking for and may a preliminary very high level overview of the code flow&lt;/p></description></item><item><title>Common Dev Tooling Quickref</title><link>/posts/common-dev-tooling-quickref/</link><pubDate>Sun, 28 Jul 2024 19:00:55 +0530</pubDate><guid>/posts/common-dev-tooling-quickref/</guid><description>&lt;p>Some useful commands for some common dev tools. Assumption is that the reader is already familiar with the tools.&lt;/p>
+&lt;h2 id="vim">Vim&lt;/h2>
+&lt;ul>
+&lt;li>Replace all instances:&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>%s/orignal/replacement/g
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work">Get sudo write after entering vim without sudo&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>:w !sudo tee %
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>See filename&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>ctrl + g
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Delete lines matching pattern&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>:g/&amp;lt;pattern&amp;gt;/d` (remove /d if only to show patterns)
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Highlight multiple patterns&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>:/\vpattern1|pattern2|…
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Go to bottom of match&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>GN
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Got to top of match&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>ggn
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Set and unset line numbers and relative numbers inside vim&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>:set nu rnu
+:set nonu nornu
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Show x out of y count for searches&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>:set shormess-=S
+&lt;/code>&lt;/pre>&lt;h2 id="terminal">Terminal&lt;/h2>
+&lt;ul>
+&lt;li>save output to file/code&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ &amp;lt;command&amp;gt; 2&amp;gt;&amp;amp;1 | tee file.txt
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>dig, whatis, whois, whoami&lt;/li>
+&lt;li>TOTRY: tldr, exa, btop, lsd, duff&lt;/li>
+&lt;li>show process tree&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ pstree -p (linux only)
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>run command in background&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ nohup &amp;lt;other command&amp;gt; &amp;amp;
+$ fg #to bring it back
+$ jobs #to list process in background
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>switch user&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ su - &amp;lt;username&amp;gt;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>&lt;a href="https://cheat.sh/">cheat.sh&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ sudo curl -s https://cht.sh/:cht.sh &amp;gt; [cht.sh](http://cht.sh/)
+$ sudo mv [cht.sh](http://cht.sh/) /usr/local/bin
+$ sudo chmod +x /usr/local/bin/cht.sh
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>set up cronjob&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>crontab -e
+#&amp;lt;schedule_pattern&amp;gt; &amp;lt;path_to_executable_script&amp;gt; 
+#http://crontab.guru/
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>ssh with agent forwarding&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>ssh -A &amp;lt;host&amp;gt;
+#or just modify the .ssh/config file with `ForwardAgent=yes`
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Keeping keys in memory&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ eval `ssh-agent`
+$ ssh-add &amp;lt;*secret_keys*&amp;gt;
+$ ssh-add --apple-use-keychain .ssh/id_rsa #for mac
+$ `ssh-add -L #list keys added
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Remove keys for a host&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ ssh-keygen -R &amp;lt;host&amp;gt;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Resolving “REMOTE HOST IDENTIFICATION HAS CHANGED!” warning when ssh-ing&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null &amp;lt;host&amp;gt;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>access a website from terminal&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ curl -i &amp;lt;url&amp;gt;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>get active ssh sessions&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ who
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>get all python versions&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ ls -ls /usr/bin/python* | awk ‘{ print $10 }’
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>get IP of laptop&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ ipconfig getifaddr en0
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>get environment variables&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ env #current session level
+$ set #system wide level
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>decompress gzipped files (.gz)&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ gzip -d &amp;lt;file&amp;gt;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>extract tar file&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ tar -xf &amp;lt;file&amp;gt;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>get md5 diffs&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ md5sum &amp;lt;files...&amp;gt;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>get permissions of current user&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ id
+$ sudo -l
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>copy all modified git files into a folder&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ git status -s | grep M | awk &amp;#39;{print $2}&amp;#39; | xargs -I {} cp --parents {} diff/
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>find all files in directory tree and move them&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ find . -type f | xargs -I {} cp {} u18/
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Find filename pattern&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ find . -name &amp;#34;regex_pattern&amp;#34;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Find directory&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ find . -type d -name &amp;#34;regex_pattern&amp;#34;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Change default shell to zsh&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ chsh -s $(which zsh)
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>&lt;a href="https://www.tecmint.com/set-system-locales-in-linux/">Set locale&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ export LC_ALL=C.UTF-8
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Debug core dumps&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ gdb program_file core_file
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>View core size limit&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>ulimit -c
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Grep around a pattern&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ grep -B 4 -A 4 foo_pattern README.txt` #4 lines Before and After pattern
+$ grep -C 4 pattern #simpler
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>&lt;a href="https://www.digitalocean.com/community/tutorials/using-grep-regular-expressions-to-search-for-text-patterns-in-linux">Grep with regex&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ grep &amp;#34;^pattern&amp;#34; #should start with pattern
+$ grep &amp;#34;pattern$&amp;#34; #should end with pattern
+$ grep &amp;#34;..ttern&amp;#34; #matches any two chars followed by pattern eg: pattern, sottern, kettern
+$ grep &amp;#34;p[aou]ttern&amp;#34; #pattern should match one of the chars in brackets
+$ grep &amp;#39;pattern1\|pattern2&amp;#39; #OR condition
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Grep header row as well&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ &amp;lt;command&amp;gt; | grep -E &amp;#39;column|pattern&amp;#39;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Live grep&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ tail -f &amp;lt;file&amp;gt; | grep &amp;lt;pattern&amp;gt;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Number of lines in a gzipped file&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ zcat &amp;lt;file&amp;gt; | wc -l
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>To know if your machine is virtual machine or bare-metal&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ virt-what #returns nothing if bare-metal
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Block device info&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ blkid or lsblk
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>View boot logs&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ journalctl -b -1
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Get time in epoch&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ date +%s
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Change timezone&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ sudo timedatectl set-timezone UTC
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Sort lines in a file&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ sort -o file file
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>View kernel configs&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ zcat /proc/config.gz | grep CONFIG_FRAME_WARN
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Dedupe hourly log filenames to get unique filename in directory:&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ ls | sed &amp;#39;s/-[0-9]\{10\}\(\.tar\)\?\.\(gz\|zst\)//&amp;#39; | sort | uniq
+# eg: hello.log-2024022115.gz ⇒ hello.log
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Create symlink&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ ln -s &amp;lt;source&amp;gt; &amp;lt;symlink&amp;gt;
+&lt;/code>&lt;/pre>&lt;h2 id="tmux">Tmux&lt;/h2>
+&lt;ul>
+&lt;li>Swap panes&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>: switch-pane -s&amp;lt;pane#&amp;gt; -t&amp;lt;pane#&amp;gt;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Sync all panes (set and unset)&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>: setw synchronize-pane
+&lt;/code>&lt;/pre>&lt;h2 id="git">Git&lt;/h2>
+&lt;ul>
+&lt;li>Auto add upstream&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ git config --global --add --bool push.autoSetupRemote true
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Show commit by a sha&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ git show d41ed690882c2345a249e17a1908232f92163a
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Rename branch&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ git branch -m old new
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Create branch from source and new&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ git checkout -b new old
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Diff file between two branch&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ git diff branch1 branch2 -- filename
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Show commits from one author&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ git log --author=&amp;#39;email&amp;#39;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Show which branch contains commit&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ git branch --contains 086062f79c5 #add -r to search remote
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Show branch matching name&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ git branch -rl ‘*pattern*’
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Show changes by commit&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ git diff commit~ commit
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Push a branch without checking out&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ git push --set-upstream origin &amp;lt;branch&amp;gt;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Show commits matching string&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ git log --grep &amp;#34;&amp;lt;pattern&amp;gt;&amp;#34;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Replace local branch with remote (first checkout &lt;!-- raw HTML omitted -->)&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ git reset --hard origin/&amp;lt;branch&amp;gt;
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>Sync files by not copying unnecessarily&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>rsync -avzhe ssh --checksum user@machine1:/remote_source/ /local_destination/ | grep -q &amp;#39;Number of files transferred: 0&amp;#39;
+&lt;/code>&lt;/pre>&lt;h2 id="other-useful-resources">Other useful resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/onceupon/Bash-Oneliner">https://github.com/onceupon/Bash-Oneliner&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/jlevy/the-art-of-command-line">https://github.com/jlevy/the-art-of-command-line&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/you-dont-need/You-Dont-Need-GUI">https://github.com/you-dont-need/You-Dont-Need-GUI&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Newbie Tax Traps</title><link>/posts/newbie-tax-traps/</link><pubDate>Thu, 11 Jul 2024 23:23:50 +0530</pubDate><guid>/posts/newbie-tax-traps/</guid><description>&lt;p>Taxes! Something you learn on the field often after it&amp;rsquo;s too late. Here are some things I wish someone told me.&lt;/p>
+&lt;blockquote>
+&lt;p>⚠️Disclaimer: These are just words cooked up from my head and not definitive or exact. More like recalling stories from personal experience. The details I&amp;rsquo;ll leave it to you and google or CA.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="1-reporting-your-mid-fy-job-change">1) Reporting your mid FY job change&lt;/h2>
+&lt;blockquote>
+&lt;p>TL;DR report your previous employer as soon as you join new company&lt;/p></description></item><item><title>My Dev Journal V2</title><link>/posts/my-dev-journal-v2/</link><pubDate>Thu, 11 Jul 2024 01:35:41 +0530</pubDate><guid>/posts/my-dev-journal-v2/</guid><description>&lt;p>Since the first blog on a dev journal &lt;a href="https://www.thejazeto.com/posts/my-dev-journal/">here&lt;/a>, I&amp;rsquo;ve made some changes.&lt;/p>
+&lt;p>With the onset of LLMs I&amp;rsquo;ve gotten help from chatGPT to upgrade my dev journal workflow.&lt;/p>
+&lt;p>Some things that have not changed are the log markdown file(daily_log.md) where your logs go into and the alias names.&lt;/p>
+&lt;p>Things that have changed:&lt;/p>
+&lt;h3 id="1-shell-script">1) Shell script&lt;/h3>
+&lt;p>Instead of having a cron job update the daily dates and month headers on a set time, which can and will fail to run if your machine is not ON at the time of cron schedule. So instead this script below will be used to do regex checks on the log file and update dates and months as required.&lt;/p></description></item><item><title>Util: CLI Dictionary</title><link>/posts/util-cli-dict/</link><pubDate>Tue, 11 Jul 2023 22:05:07 +0530</pubDate><guid>/posts/util-cli-dict/</guid><description>&lt;p>I end up having to lookup certain words which I&amp;rsquo;m not familiar with often and even though spotlight(macOS) provides quick lookup sometimes it mixes up with other files or OS related applications.&lt;/p>
+&lt;p>So if you are someone who finds yourself in the terminal most of your days this will be helpful.&lt;/p>
+&lt;h2 id="what-youll-need">What you&amp;rsquo;ll need&lt;/h2>
+&lt;ul>
+&lt;li>Terminal&lt;/li>
+&lt;li>&lt;code>curl&lt;/code> CLI tool (which is inbuilt in most cases)&lt;/li>
+&lt;li>&lt;code>jq&lt;/code> CLI command (google &amp;ldquo;how to install jq in &lt;em>your_os&lt;/em>)&lt;/li>
+&lt;/ul>
+&lt;p>That&amp;rsquo;s it!&lt;/p></description></item><item><title>My Dev Journal (could be yours too)</title><link>/posts/my-dev-journal/</link><pubDate>Tue, 06 Dec 2022 20:23:12 +0530</pubDate><guid>/posts/my-dev-journal/</guid><description>&lt;p>If you read tech blogs you’ll come across articles stating how important how important it is to maintain a dev journal or bragging doc or what have you. Basically it’s just a doc where you track all that you have done, read, watched, etc.&lt;/p>
+&lt;p>Your brain being a finite resource can only hold so much information. Over time you lose track of the code change you made, the valuable life advice you gave to that junior, some quote someone said over a meeting. Okay that’s going overboard but you get the gist.&lt;/p></description></item><item><title>Product Review: AirPod Pro vs Nothing ear(1)</title><link>/posts/product-review-earpods/</link><pubDate>Sat, 25 Sep 2021 21:36:45 +0530</pubDate><guid>/posts/product-review-earpods/</guid><description>&lt;p>I&amp;rsquo;ve owned the AirPod Pros for a little over a year and the Nothing ear(1) for about 2 weeks as of this writing. Below I share some personal experiences and opinions which may help in deciding if caught in a dillema between the two amazing products.&lt;/p>
+&lt;p>Official product links:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.apple.com/in/shop/product/MWP22HN/A/airpods-pro">AirPods Pro&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://in.nothing.tech/products/ear-1">Nothing ear(1)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Let&amp;rsquo;s get started&amp;hellip;&lt;/p>
+&lt;h3 id="active-noise-cancellation-anc">Active Noise Cancellation (ANC)&lt;/h3>
+&lt;p>This is a close one at least in my ears. They both keep out noise pretty well. For any normal human out there, you will not be able to pick any difference.&lt;/p></description></item><item><title>My Dotfile Favorites</title><link>/posts/my-dotfile-favorites/</link><pubDate>Sat, 25 Sep 2021 15:58:55 +0530</pubDate><guid>/posts/my-dotfile-favorites/</guid><description>&lt;p>Dotfiles are used to customize your system. The “dotfiles” name is derived from the configuration files in Unix-like systems that start with a dot (e.g. &lt;code>.bash_profile&lt;/code> and &lt;code>.gitconfig&lt;/code>). In this post I will share some of my most used configurations for some common dotfiles.&lt;/p>
+&lt;h2 id="zshrc">.zshrc&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>greph &lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> fc -ln &lt;span style="color:#ae81ff">0&lt;/span> | grep --color&lt;span style="color:#f92672">=&lt;/span>auto $1 | awk &lt;span style="color:#e6db74">&amp;#39;!seen[$0]++&amp;#39;&lt;/span> | sed -e &lt;span style="color:#e6db74">&amp;#39;s/^/&amp;gt;&amp;gt; /&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>I love this one. Probably my favorite in this dotfile. Usually I find myself having to type a very long CLI command to execute something. Then execute some other commands. If I have to repeat that same command, I&amp;rsquo;ll have to press up arrow key to go back the entire command execution history and find the command or re-type it from stratch or copy it in a notepad and paste it back. With this I can simply &lt;code>greph substring_of_command&lt;/code> and get every matching command that was recently executed.&lt;/p></description></item><item><title>TIL 2</title><link>/posts/til-2/</link><pubDate>Sat, 25 Sep 2021 12:17:43 +0530</pubDate><guid>/posts/til-2/</guid><description>&lt;h2 id="jq-command">&lt;code>jq&lt;/code> command&lt;/h2>
+&lt;p>A command to manipulate json files. At work we usually have a bunch json serialized ouputs in S3 or some other datastore, which are absurdly many lines long and deeply nested. Often, if I need to grep something out of it, I&amp;rsquo;ll just copy and paste it to a company internal json prettifier to make it human readable and get what I need. There must be some out on the web too. Something like &lt;a href="https://codebeautify.org/jsonviewer">this&lt;/a>.&lt;/p></description></item><item><title>Weekend Read 1</title><link>/posts/weekend-read-1/</link><pubDate>Sat, 25 Sep 2021 01:48:04 +0530</pubDate><guid>/posts/weekend-read-1/</guid><description>&lt;h3 id="articles">Articles&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://gist.github.com/djspiewak/46b543800958cf61af6efa8e072bfd5c">Thread pools in JVM&lt;/a>
+&lt;ul>
+&lt;li>CPU bound, Blocking and Non-blocking&lt;/li>
+&lt;li>&lt;strong>CPU bound&lt;/strong> should have threads at max equal to no of CPU
+&lt;ul>
+&lt;li>&lt;strong>Blocking IO&lt;/strong> operations should never be allowed on the CPU bound pool
+&lt;ul>
+&lt;li>They need to go to separate pool&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Async IO&lt;/strong> polls (non blocking) should be handled by very small number of fixed, pre-allocated threads
+&lt;ul>
+&lt;li>These just sit idle asking kernel continually if any new async IO notification is available then forward to rest of application&lt;/li>
+&lt;li>Never do any work on this thread pool. NEVER!&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://www.oracle.com/java/technologies/javase/codeconventions-comments.html">Code convention: java comments&lt;/a>
+&lt;ul>
+&lt;li>Code block (note: this is not a javadoc comment) - snippet#1&lt;/li>
+&lt;li>Single line comments - snippet#2&lt;/li>
+&lt;li>Trailing comments - snippet#3&lt;/li>
+&lt;li>End of line comments - snippet#4&lt;/li>
+&lt;li>Java doc comments
+&lt;ul>
+&lt;li>After &lt;code>/**&lt;/code> the next line follows a one space indent to align all subsequent &lt;code>*&lt;/code>&lt;/li>
+&lt;li>These should &lt;strong>NOT&lt;/strong> be placed inside contructors/methods&lt;/li>
+&lt;li>&lt;a href="https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html">Annotations supported in javadoc&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://www.baeldung.com/mockito-verify">Mockito verify cookbook&lt;/a>
+&lt;ul>
+&lt;li>&lt;code>verify(x)&lt;/code>&lt;/li>
+&lt;li>&lt;code>verify(x, y)&lt;/code>&lt;/li>
+&lt;li>&lt;code>verifyZeroInteractions(x)&lt;/code>&lt;/li>
+&lt;li>&lt;code>verifyNoMoreInteractions(x)&lt;/code>&lt;/li>
+&lt;li>&lt;code>inOrder.verify(x)&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://dev.to/joemsak/git-rebase-explained-and-eventually-illustrated-5hlb">Git rebase explained visually&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.javadoc.io/doc/org.mockito/mockito-core/2.2.9/org/mockito/Mockito.html#RETURNS_DEEP_STUBS">Deep stubs in mockito&lt;/a>
+&lt;ul>
+&lt;li>&lt;code>Mockito.RETURNS_DEFAULTS&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://www.haskellforall.com/2021/09/forward-and-reverse-proxies-explained.html">Reverse/foward proxies explained&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.swarmia.com/blog/busting-the-10x-software-engineer-myth">10x engineer myth&lt;/a>
+&lt;ul>
+&lt;li>tl;dr such engineers ultimately slow company down and drags scalability.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://supermemo.guru/wiki/Genius_checklist">Genius checklist&lt;/a>
+&lt;ul>
+&lt;li>tl;dr no secret sauce just a list of good habits to help memory&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://todaypurpose.com/posts/time-money-health/">On time, money and health&lt;/a>
+&lt;ul>
+&lt;li>tl;dr an eye opener for those in the rat race. Shows value of time in ones short life.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://jacobian.org/2021/may/25/my-estimation-technique/">Software estimation 1&lt;/a>
+&lt;ul>
+&lt;li>It&amp;rsquo;s hard and not accurate but still do it&lt;/li>
+&lt;li>Estimation gets better with time&lt;/li>
+&lt;li>Size up tasks with apt. days required for each eg: {S:1, M:3, L:5, XL:10}&lt;/li>
+&lt;li>Unertainty multiplier: {low:1.1, med:1.5, high:2.0, extreme:5.0}&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://tomrussell.co.uk/writing/2021/07/19/estimating-large-scale-software-projects.html">Software estimation 2&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="code-snippets">Code snippets&lt;/h3>
+&lt;p>Snippet#1&lt;/p></description></item><item><title>Favorite Finance Apps</title><link>/posts/favorite-finance-apps/</link><pubDate>Tue, 21 Sep 2021 05:27:54 +0530</pubDate><guid>/posts/favorite-finance-apps/</guid><description>&lt;h3 id="bank-apps">Bank apps&lt;/h3>
+&lt;ul>
+&lt;li>The banks own apps to manage accounts.&lt;/li>
+&lt;li>For the purposes of checking statements. Basic banking.&lt;/li>
+&lt;/ul>
+&lt;h3 id="cred">CRED&lt;/h3>
+&lt;ul>
+&lt;li>For tracking my credit cards and their due dates so that I don&amp;rsquo;t miss anything.&lt;/li>
+&lt;li>It also gives a very nice visual of the statements for the billing cycles. The raw PDFs generated by banks are too unorganized and hard to read.&lt;/li>
+&lt;/ul>
+&lt;h3 id="indmoney">INDmoney&lt;/h3>
+&lt;ul>
+&lt;li>Tracking all my assets and liabilities. All my investments, stocks, EPF, savings and insurances get tracked here.&lt;/li>
+&lt;li>It also helps manage your goals and gives a projection of whether and when it will be attained.&lt;/li>
+&lt;/ul>
+&lt;h3 id="paytm-money">Paytm Money&lt;/h3>
+&lt;ul>
+&lt;li>This is the main app I use to invest in mutual funds and gold.&lt;/li>
+&lt;/ul>
+&lt;h3 id="money-mgr">Money Mgr.&lt;/h3>
+&lt;ul>
+&lt;li>This app is for tracking all my daily expenses and income. I make entries whenever there is a transaction.&lt;/li>
+&lt;li>Helps give a bigger picture and spend habits over the weeks or months.&lt;/li>
+&lt;/ul>
+&lt;h3 id="kite">Kite&lt;/h3>
+&lt;ul>
+&lt;li>This is where I tried to invest in Indian stocks.&lt;/li>
+&lt;li>Not really keeping up though. Managing individual stocks needs dedication. Parking this for now.&lt;/li>
+&lt;/ul>
+&lt;h3 id="smallcase">Smallcase&lt;/h3>
+&lt;ul>
+&lt;li>Just signed up. Seems like a pretty good app. This investment vehicle is like MFs but with more control over the individual equity.&lt;/li>
+&lt;/ul></description></item><item><title>TIL 1</title><link>/posts/til-1/</link><pubDate>Mon, 20 Sep 2021 12:32:57 +0530</pubDate><guid>/posts/til-1/</guid><description>&lt;p>&lt;em>Today I Learned a.k.a TIL&lt;/em>&lt;/p>
+&lt;h2 id="factorybean">FactoryBean&lt;/h2>
+&lt;p>An amazing way to instantiate your beans based on different situations or conditions.&lt;/p>
+&lt;p>Example use case: I want a specific implementation of an interface based on some launch date. I can define that in the factory.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">MessageFactoryBean&lt;/span> &lt;span style="color:#66d9ef">implements&lt;/span> FactoryBean&lt;span style="color:#f92672">&amp;lt;&lt;/span>MessageInterface&lt;span style="color:#f92672">&amp;gt;&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">private&lt;/span> MessageInterface postcard;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">private&lt;/span> MessageInterface letter;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> MessageInterface &lt;span style="color:#a6e22e">getObject&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> (your condition here) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> letter;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> postcard;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// other methods omitted&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Where &lt;code>MessageInterface&lt;/code> is implemented by &lt;code>PostCard&lt;/code> and &lt;code>FormalLetter&lt;/code>.&lt;/p></description></item><item><title>Things I wish I learnt before getting a job</title><link>/posts/things-i-wish-i-learnt-before-job/</link><pubDate>Sun, 19 Sep 2021 14:36:20 +0530</pubDate><guid>/posts/things-i-wish-i-learnt-before-job/</guid><description>&lt;p>&lt;em>Disclaimer: there is only so much you can prepare in advance. You’ll mostly learn everything on the job itself but I think there are some learnings which can take off the load. Instead of trying to play catch up while on the job.&lt;/em>&lt;/p>
+&lt;p>Most of the big tech companies have in-house tooling which is a beast in itself to learn (depending on the company and how much internal tools they own). Having to learn them while also trying to learn a new programming language or technology can greatly slow you from getting up to speed.&lt;/p></description></item><item><title>First</title><link>/posts/first/</link><pubDate>Sun, 19 Sep 2021 14:10:19 +0530</pubDate><guid>/posts/first/</guid><description>&lt;p>Hello world&lt;/p></description></item></channel></rss>

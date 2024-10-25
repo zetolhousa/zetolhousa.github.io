@@ -1,14 +1,28 @@
 <!doctype html><html><head lang=en><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>TIL 1 - Thejazeto Lhousa</title><meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=description content="Today I Learned a.k.a TIL
-FactoryBean An amazing way to instantiate your beans based on different situations or conditions.
+FactoryBean
+An amazing way to instantiate your beans based on different situations or conditions.
 Example use case: I want a specific implementation of an interface based on some launch date. I can define that in the factory.
-public class MessageFactoryBean implements FactoryBean<MessageInterface> { private MessageInterface postcard; private MessageInterface letter; public MessageInterface getObject() { if (your condition here) { return letter; } return postcard; } // other methods omitted } Where MessageInterface is implemented by PostCard and FormalLetter."><meta property="og:image" content><meta property="og:url" content="/posts/til-1/"><meta property="og:site_name" content="Thejazeto Lhousa"><meta property="og:title" content="TIL 1"><meta property="og:description" content="Today I Learned a.k.a TIL
+public class MessageFactoryBean implements FactoryBean<MessageInterface> {
+
+    private MessageInterface postcard;
+    private MessageInterface letter;
+
+    public MessageInterface getObject() {
+        if (your condition here) {
+            return letter;
+        }
+        return postcard;
+    }
+    // other methods omitted
+}
+Where MessageInterface is implemented by PostCard and FormalLetter."><meta property="og:image" content><meta property="og:url" content="/posts/til-1/"><meta property="og:site_name" content="Thejazeto Lhousa"><meta property="og:title" content="TIL 1"><meta property="og:description" content="Today I Learned a.k.a TIL
 FactoryBean An amazing way to instantiate your beans based on different situations or conditions.
 Example use case: I want a specific implementation of an interface based on some launch date. I can define that in the factory.
 public class MessageFactoryBean implements FactoryBean<MessageInterface> { private MessageInterface postcard; private MessageInterface letter; public MessageInterface getObject() { if (your condition here) { return letter; } return postcard; } // other methods omitted } Where MessageInterface is implemented by PostCard and FormalLetter."><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2021-09-20T12:32:57+05:30"><meta property="article:modified_time" content="2021-09-20T12:32:57+05:30"><meta property="article:tag" content="Til"><meta name=twitter:card content="summary"><meta name=twitter:title content="TIL 1"><meta name=twitter:description content="Today I Learned a.k.a TIL
 FactoryBean An amazing way to instantiate your beans based on different situations or conditions.
 Example use case: I want a specific implementation of an interface based on some launch date. I can define that in the factory.
-public class MessageFactoryBean implements FactoryBean<MessageInterface> { private MessageInterface postcard; private MessageInterface letter; public MessageInterface getObject() { if (your condition here) { return letter; } return postcard; } // other methods omitted } Where MessageInterface is implemented by PostCard and FormalLetter."><script src=/js/feather.min.js></script><link href=/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css rel=stylesheet><link rel=stylesheet type=text/css media=screen href=/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css><link id=darkModeStyle rel=stylesheet type=text/css href=/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css media="(prefers-color-scheme: dark)"><link rel=stylesheet type=text/css href=/css/syntax.307ea28af3c792131fb03d0ccf1cc452b9bc56819282ddb250ec854b7fe6c459.css></head><body><div class=content><header><div class=main><a href=/>Thejazeto Lhousa</a></div><nav><a href=/>Home</a>
+public class MessageFactoryBean implements FactoryBean<MessageInterface> { private MessageInterface postcard; private MessageInterface letter; public MessageInterface getObject() { if (your condition here) { return letter; } return postcard; } // other methods omitted } Where MessageInterface is implemented by PostCard and FormalLetter."><script src=/js/feather.min.js></script><link href=/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css rel=stylesheet><link rel=stylesheet type=text/css media=screen href=/css/main.5cebd7d4fb2b97856af8d32a6def16164fcf7d844e98e236fcb3559655020373.css><link id=darkModeStyle rel=stylesheet type=text/css href=/css/dark.d22e2a2879d933a4b781535fc4c4c716e9f9d35ea4986dd0cbabda82effc4bdd.css media="(prefers-color-scheme: dark)"><link rel=stylesheet type=text/css href=/css/syntax.307ea28af3c792131fb03d0ccf1cc452b9bc56819282ddb250ec854b7fe6c459.css></head><body><div class=content><header><div class=main><a href=/>Thejazeto Lhousa</a></div><nav><a href=/>Home</a>
 <a href=/posts>All posts</a>
 <a href=/about>About</a></nav></header><main><article><div class=title><h1 class=title>TIL 1</h1><div class=meta>Posted on Sep 20, 2021</div></div><section class=body><p><em>Today I Learned a.k.a TIL</em></p><h2 id=factorybean>FactoryBean</h2><p>An amazing way to instantiate your beans based on different situations or conditions.</p><p>Example use case: I want a specific implementation of an interface based on some launch date. I can define that in the factory.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>MessageFactoryBean</span> <span style=color:#66d9ef>implements</span> FactoryBean<span style=color:#f92672>&lt;</span>MessageInterface<span style=color:#f92672>&gt;</span> {
 </span></span><span style=display:flex><span>
