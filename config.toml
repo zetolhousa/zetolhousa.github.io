@@ -5,6 +5,10 @@ theme = 'archie'
 copyright = '©thejazeto'
 googleAnalytics = 'G-KEHSFWY6K9'
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [params]
 	mode="auto" # color-mode → light,dark or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
