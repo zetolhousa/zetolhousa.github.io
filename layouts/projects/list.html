@@ -1,0 +1,11 @@
+{{ define "main" }}
+<main>
+	<h1 class="page-title">{{ .Title }}</h1>
+	{{ with .Content }}
+	<section class="body">
+		{{ . }}
+	</section>
+	{{ end }}
+	{{ partial "project-list.html" (dict "projects" .Site.Data.projects) }}
+</main>
+{{ end }}

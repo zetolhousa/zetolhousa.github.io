@@ -37,20 +37,18 @@ Edit the front matter, write the post, then remove or set `draft: false`.
 
 ### Static projects
 
-Standalone apps can live under:
+To add a project:
 
-```text
-static/projects/<project-name>/index.html
+1. Put the app at `static/projects/<project-name>/index.html`.
+2. Add it to `data/projects.yaml`:
+
+```yaml
+- title: "Project Name"
+  url: "/projects/project-name/"
+  description: "Short description."
 ```
 
-Example URLs:
-
-```text
-/projects/focus-notes/
-/projects/hello-world/
-```
-
-Use relative asset paths inside project folders. Do not edit `public/` directly.
+Projects are listed at `/projects/`, sorted alphabetically by `title`. Use relative asset paths inside project folders. Do not edit `public/` directly.
 
 ### Build check
 

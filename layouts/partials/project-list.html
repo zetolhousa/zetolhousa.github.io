@@ -1,0 +1,9 @@
+{{- if gt (len .projects) 0 -}}
+<ul class="posts">
+	{{- range sort .projects "title" "asc" -}}
+	<li class="post">
+		<a href="{{ .url | relURL }}">{{ .title }}</a>{{ with .description }} <span class="meta">- {{ . }}</span>{{ end }}
+	</li>
+	{{- end -}}
+</ul>
+{{- end -}}

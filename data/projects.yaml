@@ -1,0 +1,7 @@
+- title: "Focus Notes"
+  url: "/projects/focus-notes/"
+  description: "A small browser app for capturing notes and turning them into a focused task list."
+
+- title: "Hello World"
+  url: "/projects/hello-world/"
+  description: "A minimal standalone page proving static project hosting under Hugo."

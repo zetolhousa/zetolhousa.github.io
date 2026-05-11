@@ -13,7 +13,8 @@ googleAnalytics = 'G-KEHSFWY6K9'
 	mode="auto" # color-mode → light,dark or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	subtitle = "Random stuff and opinions"
-    customcss = ["css/syntax.css"]
+	mainSections = ["posts"]
+	customcss = ["css/syntax.css"]
 
 [[params.social]]
 name = "GitHub"
@@ -43,6 +44,11 @@ url = "/posts"
 weight = 2
 
 [[menu.main]]
+name = "Projects"
+url = "/projects"
+weight = 3
+
+[[menu.main]]
 name = "About"
 url = "/about"
-weight = 3
+weight = 4
